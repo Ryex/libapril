@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_DirectX11|ARM">
+      <Configuration>Debug_DirectX11</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_OpenKODE|ARM">
+      <Configuration>Debug_OpenKODE</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_DirectX11|Win32">
+      <Configuration>Debug_DirectX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DirectX11|ARM">
+      <Configuration>Release_DirectX11</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_OpenKODE|Win32">
+      <Configuration>Debug_OpenKODE</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_OpenKODE|ARM">
+      <Configuration>Release_OpenKODE</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DirectX11|Win32">
+      <Configuration>Release_DirectX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugP8_DirectX11|ARM">
+      <Configuration>DebugP8_DirectX11</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_OpenKODE|Win32">
+      <Configuration>Release_OpenKODE</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugP8_OpenKODE|ARM">
+      <Configuration>DebugP8_OpenKODE</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugP8|ARM">
+      <Configuration>DebugP8</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugP8|Win32">
+      <Configuration>DebugP8</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugP8_DirectX11|Win32">
+      <Configuration>DebugP8_DirectX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseP8_DirectX11|ARM">
+      <Configuration>ReleaseP8_DirectX11</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugP8_OpenKODE|Win32">
+      <Configuration>DebugP8_OpenKODE</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseP8_OpenKODE|ARM">
+      <Configuration>ReleaseP8_OpenKODE</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseP8|ARM">
+      <Configuration>ReleaseP8</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseP8|Win32">
+      <Configuration>ReleaseP8</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseP8_DirectX11|Win32">
+      <Configuration>ReleaseP8_DirectX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseP8_OpenKODE|Win32">
+      <Configuration>ReleaseP8_OpenKODE</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2D053CDA-686B-4B36-80EB-1DA5F0CEF8F9}</ProjectGuid>
+    <ProjectName>libapril</ProjectName>
+    <RootNamespace>april</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <GenerateManifest>false</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="props\v110-winrt.default.props" />
+  <Import Project="..\hltypes\props\generic\v110-winrt.$(Platform).props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DirectX11|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DirectX11|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenKODE|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenKODE|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DirectX11|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DirectX11|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenKODE|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenKODE|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseP8_DirectX11|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseP8_DirectX11|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseP8_OpenKODE|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseP8_OpenKODE|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseP8|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseP8|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugP8_DirectX11|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugP8_DirectX11|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugP8_OpenKODE|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugP8_OpenKODE|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugP8|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugP8|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Condition="'$(WholeProgramOptimization)'!='true'" Project="..\hltypes\props\generic\v110-winrt.Debug.props" />
+  <Import Condition="'$(WholeProgramOptimization)'=='true'" Project="..\hltypes\props\generic\v110-winrt.Release.props" />
+  <Import Project="props\v110-winrt.configuration.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(WholeProgramOptimization)'!='true'">
+    <FxCompile>
+      <DisableOptimizations>true</DisableOptimizations>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="platforms\OpenKODE_main.cpp" />
+    <ClCompile Include="platforms\OpenKODE_Platform.cpp" />
+    <ClCompile Include="platforms\WinRT_main.cpp" />
+    <ClCompile Include="platforms\WinRT_Platform.cpp" />
+    <ClCompile Include="rendersystems\DirectX\11\DirectX11_PixelShader.cpp" />
+    <ClCompile Include="rendersystems\DirectX\11\DirectX11_RenderSystem.cpp" />
+    <ClCompile Include="rendersystems\DirectX\11\DirectX11_Texture.cpp" />
+    <ClCompile Include="rendersystems\DirectX\11\DirectX11_VertexShader.cpp" />
+    <ClCompile Include="rendersystems\OpenGL\ES\1\OpenGLES1_RenderSystem.cpp" />
+    <ClCompile Include="rendersystems\OpenGL\ES\1\OpenGLES1_Texture.cpp" />
+    <ClCompile Include="rendersystems\OpenGL\ES\OpenGLES_RenderSystem.cpp" />
+    <ClCompile Include="rendersystems\OpenGL\ES\OpenGLES_Texture.cpp" />
+    <ClCompile Include="rendersystems\OpenGL\OpenGL_RenderSystem.cpp" />
+    <ClCompile Include="rendersystems\OpenGL\OpenGL_State.cpp" />
+    <ClCompile Include="rendersystems\OpenGL\OpenGL_Texture.cpp" />
+    <ClCompile Include="src\april.cpp" />
+    <ClCompile Include="src\aprilUtil.cpp" />
+    <ClCompile Include="src\Color.cpp" />
+    <ClCompile Include="src\delegates\ControllerDelegate.cpp" />
+    <ClCompile Include="src\delegates\EventDelegate.cpp" />
+    <ClCompile Include="src\delegates\InputDelegate.cpp" />
+    <ClCompile Include="src\delegates\KeyboardDelegate.cpp" />
+    <ClCompile Include="src\delegates\MouseDelegate.cpp" />
+    <ClCompile Include="src\delegates\SystemDelegate.cpp" />
+    <ClCompile Include="src\delegates\TouchDelegate.cpp" />
+    <ClCompile Include="src\delegates\UpdateDelegate.cpp" />
+    <ClCompile Include="src\egl.cpp" />
+    <ClCompile Include="src\images\Image.cpp" />
+    <ClCompile Include="src\images\ImageJpg.cpp" />
+    <ClCompile Include="src\images\ImageJpt.cpp" />
+    <ClCompile Include="src\images\ImagePng.cpp" />
+    <ClCompile Include="src\main_base.cpp" />
+    <ClCompile Include="src\Platform.cpp" />
+    <ClCompile Include="src\PixelShader.cpp" />
+    <ClCompile Include="src\RamTexture.cpp" />
+    <ClCompile Include="src\RenderState.cpp" />
+    <ClCompile Include="src\RenderSystem.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\timers\TimerPosix.cpp" />
+    <ClCompile Include="src\timers\TimerWin.cpp" />
+    <ClCompile Include="src\VertexShader.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="windowsystems\OpenKODE\OpenKODE_Keys.cpp" />
+    <ClCompile Include="windowsystems\OpenKODE\OpenKODE_Window.cpp" />
+    <ClCompile Include="windowsystems\WinRT\WinP8_App.cpp" />
+    <ClCompile Include="windowsystems\WinRT\WinP8_AppLauncher.cpp" />
+    <ClCompile Include="windowsystems\WinRT\WinP8_KeyboardInterface.cpp" />
+    <ClCompile Include="windowsystems\WinRT\WinRT_BaseApp.cpp" />
+    <ClCompile Include="windowsystems\WinRT\WinRT_XamlApp.cpp" />
+    <ClCompile Include="windowsystems\WinRT\WinRT.cpp" />
+    <ClCompile Include="windowsystems\WinRT\WinRT_Window.cpp" />
+    <ClCompile Include="windowsystems\WinRT\WinRT_XamlOverlay.xaml.cpp">
+      <DependentUpon>windowsystems\WinRT\WinRT_XamlOverlay.xaml</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_OpenKODE' or '$(Configuration)'=='Release_OpenKODE' or '$(Configuration)'=='DebugP8_OpenKODE' or '$(Configuration)'=='ReleaseP8_OpenKODE'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\april\androidUtilJNI.h" />
+    <ClInclude Include="include\april\april.h" />
+    <ClInclude Include="include\april\aprilExport.h" />
+    <ClInclude Include="include\april\aprilUtil.h" />
+    <ClInclude Include="include\april\Color.h" />
+    <ClInclude Include="include\april\ControllerDelegate.h" />
+    <ClInclude Include="include\april\EventDelegate.h" />
+    <ClInclude Include="include\april\Image.h" />
+    <ClInclude Include="include\april\InputDelegate.h" />
+    <ClInclude Include="include\april\KeyboardDelegate.h" />
+    <ClInclude Include="include\april\Keys.h" />
+    <ClInclude Include="include\april\main.h" />
+    <ClInclude Include="include\april\main_base.h" />
+    <ClInclude Include="include\april\MouseDelegate.h" />
+    <ClInclude Include="include\april\OpenKODE_main.h" />
+    <ClInclude Include="include\april\PixelShader.h" />
+    <ClInclude Include="include\april\Platform.h" />
+    <ClInclude Include="include\april\RamTexture.h" />
+    <ClInclude Include="include\april\RenderState.h" />
+    <ClInclude Include="include\april\RenderSystem.h" />
+    <ClInclude Include="include\april\Standard_main.h" />
+    <ClInclude Include="include\april\SystemDelegate.h" />
+    <ClInclude Include="include\april\Texture.h" />
+    <ClInclude Include="include\april\Timer.h" />
+    <ClInclude Include="include\april\TouchDelegate.h" />
+    <ClInclude Include="include\april\UpdateDelegate.h" />
+    <ClInclude Include="include\april\VertexShader.h" />
+    <ClInclude Include="include\april\Window.h" />
+    <ClInclude Include="include\april\WinRT_main.h" />
+    <ClInclude Include="rendersystems\DirectX\11\DirectX11_PixelShader.h" />
+    <ClInclude Include="rendersystems\DirectX\11\DirectX11_RenderSystem.h" />
+    <ClInclude Include="rendersystems\DirectX\11\DirectX11_Texture.h" />
+    <ClInclude Include="rendersystems\DirectX\11\DirectX11_VertexShader.h" />
+    <ClInclude Include="rendersystems\OpenGL\ES\1\OpenGLES1_RenderSystem.h" />
+    <ClInclude Include="rendersystems\OpenGL\ES\1\OpenGLES1_Texture.h" />
+    <ClInclude Include="rendersystems\OpenGL\ES\OpenGLES_RenderSystem.h" />
+    <ClInclude Include="rendersystems\OpenGL\ES\OpenGLES_Texture.h" />
+    <ClInclude Include="rendersystems\OpenGL\OpenGL_RenderSystem.h" />
+    <ClInclude Include="rendersystems\OpenGL\OpenGL_State.h" />
+    <ClInclude Include="rendersystems\OpenGL\OpenGL_Texture.h" />
+    <ClInclude Include="src\egl.h" />
+    <ClInclude Include="windowsystems\OpenKODE\OpenKODE_Keys.h" />
+    <ClInclude Include="windowsystems\OpenKODE\OpenKODE_Window.h" />
+    <ClInclude Include="windowsystems\WinRT\IWinRT.h" />
+    <ClInclude Include="windowsystems\WinRT\pch.h" />
+    <ClInclude Include="windowsystems\WinRT\WinP8_App.h" />
+    <ClInclude Include="windowsystems\WinRT\WinP8_AppLauncher.h" />
+    <ClInclude Include="windowsystems\WinRT\WinP8_KeyboardInterface.h" />
+    <ClInclude Include="windowsystems\WinRT\WinRT_BaseApp.h" />
+    <ClInclude Include="windowsystems\WinRT\WinRT_XamlApp.h" />
+    <ClInclude Include="windowsystems\WinRT\WinRT.h" />
+    <ClInclude Include="windowsystems\WinRT\WinRT_Window.h" />
+    <ClInclude Include="windowsystems\WinRT\WinRT_XamlOverlay.xaml.h">
+      <DependentUpon>windowsystems\WinRT\WinRT_XamlOverlay.xaml</DependentUpon>
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_OpenKODE' or '$(Configuration)'=='Release_OpenKODE' or '$(Configuration)'=='DebugP8_OpenKODE' or '$(Configuration)'=='ReleaseP8_OpenKODE'">true</ExcludedFromBuild>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gtypes\libgtypes_WinRT.vcxproj">
+      <Project>{9c043b29-db40-48d5-97d8-1bc44128e3ba}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\hltypes\libhltypes_WinRT.vcxproj">
+      <Project>{e4d373bf-e227-48b9-99e6-84987e8674ec}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fileproperties.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_AlphaMap.hlsl">
+      <AdditionalIncludeDirectories>rendersystems\DirectX\11\default-shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel Condition="'$(PlatformToolset)'!='v110_wp80'">4.0_level_9_1</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_Lerp.hlsl">
+      <AdditionalIncludeDirectories>rendersystems\DirectX\11\default-shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel Condition="'$(PlatformToolset)'!='v110_wp80'">4.0_level_9_1</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_Multiply.hlsl">
+      <AdditionalIncludeDirectories>rendersystems\DirectX\11\default-shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel Condition="'$(PlatformToolset)'!='v110_wp80'">4.0_level_9_1</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_TexturedAlphaMap.hlsl">
+      <AdditionalIncludeDirectories>rendersystems\DirectX\11\default-shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel Condition="'$(PlatformToolset)'!='v110_wp80'">4.0_level_9_1</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_TexturedLerp.hlsl">
+      <AdditionalIncludeDirectories>rendersystems\DirectX\11\default-shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel Condition="'$(PlatformToolset)'!='v110_wp80'">4.0_level_9_1</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_TexturedMultiply.hlsl">
+      <AdditionalIncludeDirectories>rendersystems\DirectX\11\default-shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel Condition="'$(PlatformToolset)'!='v110_wp80'">4.0_level_9_1</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\VertexShader_Default.hlsl">
+      <AdditionalIncludeDirectories>rendersystems\DirectX\11\default-shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel Condition="'$(PlatformToolset)'!='v110_wp80'">4.0_level_9_1</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="windowsystems\WinRT\WinRT_XamlOverlay.xaml">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Debug_OpenKODE' or '$(Configuration)'=='Release_OpenKODE' or '$(Configuration)'=='DebugP8_OpenKODE' or '$(Configuration)'=='ReleaseP8_OpenKODE'">true</ExcludedFromBuild>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rendersystems\DirectX\11\default-shaders\Shaders.hlsli" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

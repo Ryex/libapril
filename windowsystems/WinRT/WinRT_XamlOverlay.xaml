@@ -1,0 +1,28 @@
+﻿<SwapChainBackgroundPanel
+		x:Name="swapChainPanel"
+		x:Class="april.WinRT_XamlOverlay"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	
+	<Button
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			Name="keyboardDisable"
+			IsHitTestVisible="False"
+			Foreground="{x:Null}"
+			Opacity="0">
+	</Button>
+	<TextBox
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			Name="keyboardTextbox"
+			IsHitTestVisible="False"
+			IsTextPredictionEnabled="False"
+			Background="{x:Null}"
+			BorderBrush="{x:Null}"
+			Foreground="{x:Null}"
+			IsEnabled="False"
+			Opacity="0">
+	</TextBox>
+	
+</SwapChainBackgroundPanel>

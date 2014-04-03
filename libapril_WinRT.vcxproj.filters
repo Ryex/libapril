@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\windowsystems">
+      <UniqueIdentifier>{89a33cfd-9923-463b-8900-b6ec0c384d3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendersystems">
+      <UniqueIdentifier>{3bb5863e-68d7-4150-9cdb-7ad981c4596a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\windowsystems">
+      <UniqueIdentifier>{f31eac1f-9820-4ea3-8fea-773ecc1f6167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rendersystems">
+      <UniqueIdentifier>{2cbdabf4-1f5a-41ba-afef-961f8d5343c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{bc3abb83-0c68-456a-ae46-f6fe13ebf76e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platforms">
+      <UniqueIdentifier>{4849144f-915b-416b-955e-a300028d705b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\windowsystems\WinRT">
+      <UniqueIdentifier>{b057517c-ef9f-47d8-8b0e-5488931d531b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\windowsystems\WinRT">
+      <UniqueIdentifier>{3fbf91f2-1d89-4763-9e05-f20c1bd1b914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendersystems\DirectX">
+      <UniqueIdentifier>{69720d0b-cdf2-4947-990c-cb2b115ad64d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendersystems\DirectX\11">
+      <UniqueIdentifier>{9f365cc7-17d2-4512-bee2-362d06e1d3ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendersystems\DirectX\11\default-shaders">
+      <UniqueIdentifier>{91619bbe-7337-449e-b5ad-2b32681c3956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rendersystems\DirectX">
+      <UniqueIdentifier>{ce428bfd-9a41-4c87-80d8-057dcd96dbba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rendersystems\DirectX\11">
+      <UniqueIdentifier>{bcb018cb-2db9-4804-86cf-ae4505557f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\images">
+      <UniqueIdentifier>{c0f6e09c-095d-4499-a9de-6bdc786c8c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\timers">
+      <UniqueIdentifier>{0a34d72f-ae1e-410f-be76-b7cfe7466c6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\delegates">
+      <UniqueIdentifier>{62e2ae19-d95b-4b2e-99ab-7519e07ec3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\delegates">
+      <UniqueIdentifier>{8318e614-93bf-4fef-8462-0bfeef0094de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rendersystems\OpenGL">
+      <UniqueIdentifier>{4ec46024-f445-482c-9449-86e4c6764491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rendersystems\OpenGL\ES">
+      <UniqueIdentifier>{65a036dc-b43b-4749-9ade-5fed0135a25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rendersystems\OpenGL\ES\1">
+      <UniqueIdentifier>{64903a66-cc9c-4158-b243-f00b821e9833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendersystems\OpenGL">
+      <UniqueIdentifier>{b191cad0-48aa-4783-9708-6e700de76e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendersystems\OpenGL\ES">
+      <UniqueIdentifier>{2138d704-1896-48d6-b90d-e84b94eafd32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rendersystems\OpenGL\ES\1">
+      <UniqueIdentifier>{c0fd5a07-60c3-4200-95ae-409a57b9d73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\windowsystems\OpenKODE">
+      <UniqueIdentifier>{0541bba8-e20e-4a8a-84c1-670ad29baf5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\windowsystems\OpenKODE">
+      <UniqueIdentifier>{250f9bc5-7173-4bc0-accd-2f330c864aca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\windowsystems\WinRT\WinP8">
+      <UniqueIdentifier>{4811bbda-ef69-4399-930a-b88609ae0b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\windowsystems\WinRT\WinP8">
+      <UniqueIdentifier>{7ebb6126-e027-4986-afb3-080940040276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\main">
+      <UniqueIdentifier>{4b0e1a80-3383-4dd1-84f2-5adecf4999ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Color.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PixelShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\april.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\WinRT\WinRT_Window.cpp">
+      <Filter>Source Files\windowsystems\WinRT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\aprilUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RamTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="platforms\WinRT_Platform.cpp">
+      <Filter>Source Files\platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="platforms\WinRT_main.cpp">
+      <Filter>Source Files\platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\DirectX\11\DirectX11_PixelShader.cpp">
+      <Filter>Source Files\rendersystems\DirectX\11</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\DirectX\11\DirectX11_RenderSystem.cpp">
+      <Filter>Source Files\rendersystems\DirectX\11</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\DirectX\11\DirectX11_Texture.cpp">
+      <Filter>Source Files\rendersystems\DirectX\11</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\DirectX\11\DirectX11_VertexShader.cpp">
+      <Filter>Source Files\rendersystems\DirectX\11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\images\Image.cpp">
+      <Filter>Source Files\images</Filter>
+    </ClCompile>
+    <ClCompile Include="src\images\ImageJpg.cpp">
+      <Filter>Source Files\images</Filter>
+    </ClCompile>
+    <ClCompile Include="src\images\ImageJpt.cpp">
+      <Filter>Source Files\images</Filter>
+    </ClCompile>
+    <ClCompile Include="src\images\ImagePng.cpp">
+      <Filter>Source Files\images</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timers\TimerPosix.cpp">
+      <Filter>Source Files\timers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\timers\TimerWin.cpp">
+      <Filter>Source Files\timers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delegates\ControllerDelegate.cpp">
+      <Filter>Source Files\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delegates\EventDelegate.cpp">
+      <Filter>Source Files\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delegates\InputDelegate.cpp">
+      <Filter>Source Files\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delegates\KeyboardDelegate.cpp">
+      <Filter>Source Files\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delegates\MouseDelegate.cpp">
+      <Filter>Source Files\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delegates\SystemDelegate.cpp">
+      <Filter>Source Files\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delegates\TouchDelegate.cpp">
+      <Filter>Source Files\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\delegates\UpdateDelegate.cpp">
+      <Filter>Source Files\delegates</Filter>
+    </ClCompile>
+    <ClCompile Include="src\egl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\WinRT\WinRT_XamlApp.cpp">
+      <Filter>Source Files\windowsystems\WinRT</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\WinRT\WinRT.cpp">
+      <Filter>Source Files\windowsystems\WinRT</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\OpenGL\ES\1\OpenGLES1_RenderSystem.cpp">
+      <Filter>Source Files\rendersystems\OpenGL\ES\1</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\OpenGL\ES\1\OpenGLES1_Texture.cpp">
+      <Filter>Source Files\rendersystems\OpenGL\ES\1</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\OpenGL\ES\OpenGLES_RenderSystem.cpp">
+      <Filter>Source Files\rendersystems\OpenGL\ES</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\OpenGL\ES\OpenGLES_Texture.cpp">
+      <Filter>Source Files\rendersystems\OpenGL\ES</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\OpenGL\OpenGL_RenderSystem.cpp">
+      <Filter>Source Files\rendersystems\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\OpenGL\OpenGL_State.cpp">
+      <Filter>Source Files\rendersystems\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="rendersystems\OpenGL\OpenGL_Texture.cpp">
+      <Filter>Source Files\rendersystems\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\OpenKODE\OpenKODE_Keys.cpp">
+      <Filter>Source Files\windowsystems\OpenKODE</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\OpenKODE\OpenKODE_Window.cpp">
+      <Filter>Source Files\windowsystems\OpenKODE</Filter>
+    </ClCompile>
+    <ClCompile Include="platforms\OpenKODE_main.cpp">
+      <Filter>Source Files\platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="platforms\OpenKODE_Platform.cpp">
+      <Filter>Source Files\platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\WinRT\WinP8_App.cpp">
+      <Filter>Source Files\windowsystems\WinRT\WinP8</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\WinRT\WinP8_AppLauncher.cpp">
+      <Filter>Source Files\windowsystems\WinRT\WinP8</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\WinRT\WinRT_XamlOverlay.xaml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\WinRT\WinRT_BaseApp.cpp">
+      <Filter>Source Files\windowsystems\WinRT</Filter>
+    </ClCompile>
+    <ClCompile Include="windowsystems\WinRT\WinP8_KeyboardInterface.cpp">
+      <Filter>Source Files\windowsystems\WinRT\WinP8</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\april\aprilExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\Keys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\RenderSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\PixelShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\VertexShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\april.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\WinRT_Window.h">
+      <Filter>Header Files\windowsystems\WinRT</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\aprilUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\RamTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\DirectX\11\DirectX11_PixelShader.h">
+      <Filter>Header Files\rendersystems\DirectX\11</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\DirectX\11\DirectX11_RenderSystem.h">
+      <Filter>Header Files\rendersystems\DirectX\11</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\DirectX\11\DirectX11_Texture.h">
+      <Filter>Header Files\rendersystems\DirectX\11</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\DirectX\11\DirectX11_VertexShader.h">
+      <Filter>Header Files\rendersystems\DirectX\11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\ControllerDelegate.h">
+      <Filter>Header Files\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\EventDelegate.h">
+      <Filter>Header Files\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\InputDelegate.h">
+      <Filter>Header Files\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\KeyboardDelegate.h">
+      <Filter>Header Files\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\MouseDelegate.h">
+      <Filter>Header Files\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\SystemDelegate.h">
+      <Filter>Header Files\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\TouchDelegate.h">
+      <Filter>Header Files\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\UpdateDelegate.h">
+      <Filter>Header Files\delegates</Filter>
+    </ClInclude>
+    <ClInclude Include="src\egl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\WinRT_XamlApp.h">
+      <Filter>Header Files\windowsystems\WinRT</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\pch.h">
+      <Filter>Header Files\windowsystems\WinRT</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\OpenGL\ES\1\OpenGLES1_RenderSystem.h">
+      <Filter>Header Files\rendersystems\OpenGL\ES\1</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\OpenGL\ES\1\OpenGLES1_Texture.h">
+      <Filter>Header Files\rendersystems\OpenGL\ES\1</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\OpenGL\OpenGL_Texture.h">
+      <Filter>Header Files\rendersystems\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\OpenGL\OpenGL_RenderSystem.h">
+      <Filter>Header Files\rendersystems\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\OpenGL\OpenGL_State.h">
+      <Filter>Header Files\rendersystems\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\OpenGL\ES\OpenGLES_RenderSystem.h">
+      <Filter>Header Files\rendersystems\OpenGL\ES</Filter>
+    </ClInclude>
+    <ClInclude Include="rendersystems\OpenGL\ES\OpenGLES_Texture.h">
+      <Filter>Header Files\rendersystems\OpenGL\ES</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\OpenKODE\OpenKODE_Keys.h">
+      <Filter>Header Files\windowsystems\OpenKODE</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\OpenKODE\OpenKODE_Window.h">
+      <Filter>Header Files\windowsystems\OpenKODE</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\WinRT.h">
+      <Filter>Header Files\windowsystems\WinRT</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\WinP8_AppLauncher.h">
+      <Filter>Header Files\windowsystems\WinRT\WinP8</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\WinP8_App.h">
+      <Filter>Header Files\windowsystems\WinRT\WinP8</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\WinRT_XamlOverlay.xaml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\IWinRT.h">
+      <Filter>Header Files\windowsystems\WinRT</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\WinRT_BaseApp.h">
+      <Filter>Header Files\windowsystems\WinRT</Filter>
+    </ClInclude>
+    <ClInclude Include="windowsystems\WinRT\WinP8_KeyboardInterface.h">
+      <Filter>Header Files\windowsystems\WinRT\WinP8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\androidUtilJNI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\RenderState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\Standard_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\OpenKODE_main.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\main_base.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\main.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+    <ClInclude Include="include\april\WinRT_main.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fileproperties.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\VertexShader_Default.hlsl">
+      <Filter>Source Files\rendersystems\DirectX\11\default-shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_Lerp.hlsl">
+      <Filter>Source Files\rendersystems\DirectX\11\default-shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_Multiply.hlsl">
+      <Filter>Source Files\rendersystems\DirectX\11\default-shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_TexturedLerp.hlsl">
+      <Filter>Source Files\rendersystems\DirectX\11\default-shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_TexturedMultiply.hlsl">
+      <Filter>Source Files\rendersystems\DirectX\11\default-shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_AlphaMap.hlsl">
+      <Filter>Source Files\rendersystems\DirectX\11\default-shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="rendersystems\DirectX\11\default-shaders\PixelShader_TexturedAlphaMap.hlsl">
+      <Filter>Source Files\rendersystems\DirectX\11\default-shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rendersystems\DirectX\11\default-shaders\Shaders.hlsli">
+      <Filter>Source Files\rendersystems\DirectX\11\default-shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="windowsystems\WinRT\WinRT_XamlOverlay.xaml">
+      <Filter>Source Files\windowsystems\WinRT</Filter>
+    </Page>
+  </ItemGroup>
+</Project>

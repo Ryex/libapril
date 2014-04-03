@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>libhltypes.lib;libgtypes.lib;libpng.lib;libjpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug_DirectX11' or
+                                  '$(Configuration)'=='DebugP8_DirectX11' or
+                                  '$(Configuration)'=='Release_DirectX11' or
+                                  '$(Configuration)'=='ReleaseP8_DirectX11'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DIRECTX;_DIRECTX11;_WINRT_WINDOW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug_OpenKODE' or
+                                  '$(Configuration)'=='DebugP8_OpenKODE' or
+                                  '$(Configuration)'=='Release_OpenKODE' or
+                                  '$(Configuration)'=='ReleaseP8_OpenKODE'">
+    <ClCompile>
+      <PreprocessorDefinitions>_OPENGL;_OPENGLES;_OPENGLES1;_EGL;_OPENKODE;_OPENKODE_WINDOW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libGLES_CM.lib;libEGL.lib;libKD.lib;libKD_winrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

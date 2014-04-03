@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.example.april.android.demoTicTacToe"
+		android:versionCode="330"
+		android:versionName="3.3.0">
+		
+	<uses-sdk android:minSdkVersion="8"/>
+	<uses-feature android:glEsVersion="0x00010001"/>
+	<uses-feature android:name="android.hardware.screen.landscape"/>
+	
+	<application android:label="Demo Tic Tac Toe"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		<activity android:name=".DemoTicTacToe"
+				android:label="Demo Tic Tac Toe"
+				android:screenOrientation="landscape">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+	</application>
+	
+</manifest> 

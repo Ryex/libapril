@@ -1,0 +1,2105 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F1B521012E470B200E958D8 /* OpenGL_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520C12E470B200E958D8 /* OpenGL_RenderSystem.cpp */; };
+		7F1B521212E470B200E958D8 /* OpenGL_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520E12E470B200E958D8 /* OpenGL_Texture.cpp */; };
+		7F1B522A12E4710D00E958D8 /* aprilExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1B522712E4710D00E958D8 /* aprilExport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F1B522B12E4710D00E958D8 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1B522812E4710D00E958D8 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F1B522C12E4710D00E958D8 /* Texture.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1B522912E4710D00E958D8 /* Texture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F1B523012E4713600E958D8 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522E12E4713600E958D8 /* Color.cpp */; };
+		7F1B523112E4713600E958D8 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522F12E4713600E958D8 /* Texture.cpp */; };
+		7F42F7A711EB178C00B1C1DF /* Keys.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F42F7A311EB178C00B1C1DF /* Keys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F42F7A811EB178C00B1C1DF /* RenderSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F42F7A411EB178C00B1C1DF /* RenderSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F42F7AC11EB179A00B1C1DF /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F42F7AA11EB179A00B1C1DF /* RenderSystem.cpp */; };
+		7F42F83211EB1A9700B1C1DF /* gtypes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42F83111EB1A9700B1C1DF /* gtypes.framework */; };
+		7F42F83411EB1A9700B1C1DF /* hltypes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42F83311EB1A9700B1C1DF /* hltypes.framework */; };
+		7F42FACD11EB341E00B1C1DF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42FACC11EB341E00B1C1DF /* OpenGL.framework */; };
+		7F42FAD511EB342900B1C1DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42FAD411EB342900B1C1DF /* Cocoa.framework */; };
+		7F4D0FEA11FEE6C500F2F9F5 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4D0FE911FEE6C500F2F9F5 /* main.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FA3ED1811F9817A001D1DDD /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA3ED1711F9817A001D1DDD /* Window.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FA3ED2711F98BAE001D1DDD /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3ED2611F98BAE001D1DDD /* Window.cpp */; };
+		7FC8FA29122FA58F0092964C /* Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FC8FA28122FA58F0092964C /* Timer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9313EB914FE64CE003BC7AB /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9313EB814FE64CE003BC7AB /* SDL.framework */; };
+		C9C04F8B14BB106F005BD333 /* PixelShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F8A14BB106F005BD333 /* PixelShader.cpp */; };
+		C9C04F8C14BB106F005BD333 /* PixelShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F8A14BB106F005BD333 /* PixelShader.cpp */; };
+		C9C04F9014BB1091005BD333 /* PixelShader.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C04F8E14BB1091005BD333 /* PixelShader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9C04F9114BB1091005BD333 /* VertexShader.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C04F8F14BB1091005BD333 /* VertexShader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9C04F9314BB109B005BD333 /* VertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F9214BB109B005BD333 /* VertexShader.cpp */; };
+		C9C04F9414BB109B005BD333 /* VertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F9214BB109B005BD333 /* VertexShader.cpp */; };
+		C9E6097D150518B400EB077F /* april.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6097C150518B400EB077F /* april.cpp */; };
+		C9E6097E150518B400EB077F /* april.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6097C150518B400EB077F /* april.cpp */; };
+		C9E6098F1505191800EB077F /* april.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E6098D1505191800EB077F /* april.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9E609901505191800EB077F /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E6098E1505191800EB077F /* Platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1134EED175CDA3300BFF3A2 /* OpenGL_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520C12E470B200E958D8 /* OpenGL_RenderSystem.cpp */; };
+		D1134EEE175CDA3300BFF3A2 /* OpenGL_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520E12E470B200E958D8 /* OpenGL_Texture.cpp */; };
+		D1134EEF175CDA3300BFF3A2 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522E12E4713600E958D8 /* Color.cpp */; };
+		D1134EF0175CDA3300BFF3A2 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522F12E4713600E958D8 /* Texture.cpp */; };
+		D1134EF1175CDA3300BFF3A2 /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F42F7AA11EB179A00B1C1DF /* RenderSystem.cpp */; };
+		D1134EF2175CDA3300BFF3A2 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3ED2611F98BAE001D1DDD /* Window.cpp */; };
+		D1134EF3175CDA3300BFF3A2 /* PixelShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F8A14BB106F005BD333 /* PixelShader.cpp */; };
+		D1134EF4175CDA3300BFF3A2 /* VertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F9214BB109B005BD333 /* VertexShader.cpp */; };
+		D1134EF5175CDA3300BFF3A2 /* april.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6097C150518B400EB077F /* april.cpp */; };
+		D1134EF9175CDA3300BFF3A2 /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF818158737A000D31573 /* Platform.cpp */; };
+		D1134EFA175CDA3300BFF3A2 /* RamTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF819158737A000D31573 /* RamTexture.cpp */; };
+		D1134EFB175CDA3300BFF3A2 /* aprilUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96915875F3300D31573 /* aprilUtil.cpp */; };
+		D1134EFC175CDA3300BFF3A2 /* EventDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204416D37C2300B9C9AD /* EventDelegate.cpp */; };
+		D1134EFD175CDA3300BFF3A2 /* InputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204516D37C2300B9C9AD /* InputDelegate.cpp */; };
+		D1134EFE175CDA3300BFF3A2 /* KeyboardDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204616D37C2300B9C9AD /* KeyboardDelegate.cpp */; };
+		D1134EFF175CDA3300BFF3A2 /* MouseDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204716D37C2300B9C9AD /* MouseDelegate.cpp */; };
+		D1134F00175CDA3300BFF3A2 /* SystemDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204816D37C2300B9C9AD /* SystemDelegate.cpp */; };
+		D1134F01175CDA3300BFF3A2 /* TouchDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204916D37C2300B9C9AD /* TouchDelegate.cpp */; };
+		D1134F02175CDA3300BFF3A2 /* UpdateDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204A16D37C2300B9C9AD /* UpdateDelegate.cpp */; };
+		D1134F03175CDA3300BFF3A2 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206016D37C5600B9C9AD /* Image.cpp */; };
+		D1134F04175CDA3300BFF3A2 /* ImageJpg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206116D37C5600B9C9AD /* ImageJpg.cpp */; };
+		D1134F05175CDA3300BFF3A2 /* ImageJpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206216D37C5600B9C9AD /* ImageJpt.cpp */; };
+		D1134F06175CDA3300BFF3A2 /* ImagePng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206316D37C5600B9C9AD /* ImagePng.cpp */; };
+		D1134F07175CDA3300BFF3A2 /* TimerPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7207316D37C7000B9C9AD /* TimerPosix.cpp */; };
+		D1134F08175CDA3300BFF3A2 /* OpenGL_State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A316D37E3100B9C9AD /* OpenGL_State.cpp */; };
+		D1134F09175CDA3300BFF3A2 /* OpenGL1_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A916D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp */; };
+		D1134F0A175CDA3300BFF3A2 /* OpenGL1_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720AB16D37E3900B9C9AD /* OpenGL1_Texture.cpp */; };
+		D1134F0B175CDA3300BFF3A2 /* OpenGLES_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720B516D37E4200B9C9AD /* OpenGLES_RenderSystem.cpp */; };
+		D1134F0C175CDA3300BFF3A2 /* OpenGLES_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720B716D37E4200B9C9AD /* OpenGLES_Texture.cpp */; };
+		D1134F0D175CDA3300BFF3A2 /* OpenGLES1_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720C316D37E5800B9C9AD /* OpenGLES1_RenderSystem.cpp */; };
+		D1134F0E175CDA3300BFF3A2 /* OpenGLES1_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720C516D37E5800B9C9AD /* OpenGLES1_Texture.cpp */; };
+		D1134F10175CDA3300BFF3A2 /* ControllerDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D16AB63D16F1F8E000E971B0 /* ControllerDelegate.cpp */; };
+		D1134F1B175CDA8D00BFF3A2 /* OpenKODE_Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1134F19175CDA8D00BFF3A2 /* OpenKODE_Window.cpp */; };
+		D1134F1F175CDAC600BFF3A2 /* OpenKODE_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1134F1D175CDAC600BFF3A2 /* OpenKODE_main.cpp */; };
+		D1134F20175CDAC600BFF3A2 /* OpenKODE_Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1134F1E175CDAC600BFF3A2 /* OpenKODE_Platform.cpp */; };
+		D1134F23175CDAD200BFF3A2 /* egl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1134F21175CDAD200BFF3A2 /* egl.cpp */; };
+		D11A21631712CF9A00BA9DA8 /* Mac_Keys.mm in Sources */ = {isa = PBXBuildFile; fileRef = D11A21621712CF9A00BA9DA8 /* Mac_Keys.mm */; };
+		D1256A2E1727F6C60089C583 /* Mac_AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1256A2C1727F6C60089C583 /* Mac_AppDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1256A2F1727F6C60089C583 /* Mac_AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1256A2D1727F6C60089C583 /* Mac_AppDelegate.mm */; };
+		D136818E187BFB3E00E66E32 /* main_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818C187BFB3E00E66E32 /* main_base.cpp */; };
+		D136818F187BFB3E00E66E32 /* main_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818C187BFB3E00E66E32 /* main_base.cpp */; };
+		D1368190187BFB3E00E66E32 /* main_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818C187BFB3E00E66E32 /* main_base.cpp */; };
+		D1368191187BFB3E00E66E32 /* main_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818C187BFB3E00E66E32 /* main_base.cpp */; };
+		D1368192187BFB3E00E66E32 /* main_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818C187BFB3E00E66E32 /* main_base.cpp */; };
+		D1368193187BFB3E00E66E32 /* main_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818C187BFB3E00E66E32 /* main_base.cpp */; };
+		D1368194187BFB3E00E66E32 /* RenderState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818D187BFB3E00E66E32 /* RenderState.cpp */; };
+		D1368195187BFB3E00E66E32 /* RenderState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818D187BFB3E00E66E32 /* RenderState.cpp */; };
+		D1368196187BFB3E00E66E32 /* RenderState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818D187BFB3E00E66E32 /* RenderState.cpp */; };
+		D1368197187BFB3E00E66E32 /* RenderState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818D187BFB3E00E66E32 /* RenderState.cpp */; };
+		D1368198187BFB3E00E66E32 /* RenderState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818D187BFB3E00E66E32 /* RenderState.cpp */; };
+		D1368199187BFB3E00E66E32 /* RenderState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D136818D187BFB3E00E66E32 /* RenderState.cpp */; };
+		D13681A7187BFB6600E66E32 /* ControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D136819C187BFB6600E66E32 /* ControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13681A8187BFB6600E66E32 /* ControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D136819C187BFB6600E66E32 /* ControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13681A9187BFB6600E66E32 /* main_base.h in Headers */ = {isa = PBXBuildFile; fileRef = D136819D187BFB6600E66E32 /* main_base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13681AA187BFB6600E66E32 /* main_base.h in Headers */ = {isa = PBXBuildFile; fileRef = D136819D187BFB6600E66E32 /* main_base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13681AD187BFB6600E66E32 /* RenderState.h in Headers */ = {isa = PBXBuildFile; fileRef = D136819F187BFB6600E66E32 /* RenderState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13681AE187BFB6600E66E32 /* RenderState.h in Headers */ = {isa = PBXBuildFile; fileRef = D136819F187BFB6600E66E32 /* RenderState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13681AF187BFB6600E66E32 /* Standard_main.h in Headers */ = {isa = PBXBuildFile; fileRef = D13681A0187BFB6600E66E32 /* Standard_main.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13681B0187BFB6600E66E32 /* Standard_main.h in Headers */ = {isa = PBXBuildFile; fileRef = D13681A0187BFB6600E66E32 /* Standard_main.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D137FF331760912300568F0E /* PVRTexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1981C62140F85350057C3AF /* PVRTexture.mm */; };
+		D1397A46175F32CE00DC02D7 /* OpenKODE_Keys.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1397A44175F32CE00DC02D7 /* OpenKODE_Keys.cpp */; };
+		D1397A9A175F834800DC02D7 /* iOS_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1397A99175F834800DC02D7 /* iOS_devices.mm */; };
+		D1397A9B175F834800DC02D7 /* iOS_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1397A99175F834800DC02D7 /* iOS_devices.mm */; };
+		D14BF80B15872B2600D31573 /* SDL_Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF80915872B2600D31573 /* SDL_Window.cpp */; };
+		D14BF80F15872B3700D31573 /* iOS_Window.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF80E15872B3700D31573 /* iOS_Window.mm */; };
+		D14BF81215872B4000D31573 /* iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF81015872B4000D31573 /* iOS_main.mm */; };
+		D14BF81315872B4000D31573 /* iOS_Platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF81115872B4000D31573 /* iOS_Platform.mm */; };
+		D14BF81615872B4900D31573 /* Mac_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF81415872B4900D31573 /* Mac_main.mm */; };
+		D14BF81715872B4900D31573 /* Mac_Platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF81515872B4900D31573 /* Mac_Platform.mm */; };
+		D14BF81A158737A000D31573 /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF818158737A000D31573 /* Platform.cpp */; };
+		D14BF81B158737A000D31573 /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF818158737A000D31573 /* Platform.cpp */; };
+		D14BF81C158737A000D31573 /* RamTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF819158737A000D31573 /* RamTexture.cpp */; };
+		D14BF81D158737A000D31573 /* RamTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF819158737A000D31573 /* RamTexture.cpp */; };
+		D14BF820158737B300D31573 /* aprilUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D14BF81E158737B300D31573 /* aprilUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D14BF821158737B300D31573 /* RamTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = D14BF81F158737B300D31573 /* RamTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D14BF96A15875F3300D31573 /* aprilUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96915875F3300D31573 /* aprilUtil.cpp */; };
+		D14BF96B15875F3300D31573 /* aprilUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96915875F3300D31573 /* aprilUtil.cpp */; };
+		D153474F178AD62A00151D1A /* OpenGL_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520C12E470B200E958D8 /* OpenGL_RenderSystem.cpp */; };
+		D1534750178AD62A00151D1A /* OpenGL_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520E12E470B200E958D8 /* OpenGL_Texture.cpp */; };
+		D1534751178AD62A00151D1A /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522E12E4713600E958D8 /* Color.cpp */; };
+		D1534752178AD62A00151D1A /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522F12E4713600E958D8 /* Texture.cpp */; };
+		D1534753178AD62A00151D1A /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F42F7AA11EB179A00B1C1DF /* RenderSystem.cpp */; };
+		D1534754178AD62A00151D1A /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3ED2611F98BAE001D1DDD /* Window.cpp */; };
+		D1534755178AD62A00151D1A /* PixelShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F8A14BB106F005BD333 /* PixelShader.cpp */; };
+		D1534756178AD62A00151D1A /* VertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F9214BB109B005BD333 /* VertexShader.cpp */; };
+		D1534757178AD62A00151D1A /* april.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6097C150518B400EB077F /* april.cpp */; };
+		D1534758178AD62A00151D1A /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF818158737A000D31573 /* Platform.cpp */; };
+		D1534759178AD62A00151D1A /* RamTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF819158737A000D31573 /* RamTexture.cpp */; };
+		D153475A178AD62A00151D1A /* aprilUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96915875F3300D31573 /* aprilUtil.cpp */; };
+		D153475B178AD62A00151D1A /* EventDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204416D37C2300B9C9AD /* EventDelegate.cpp */; };
+		D153475C178AD62A00151D1A /* InputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204516D37C2300B9C9AD /* InputDelegate.cpp */; };
+		D153475D178AD62A00151D1A /* KeyboardDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204616D37C2300B9C9AD /* KeyboardDelegate.cpp */; };
+		D153475E178AD62A00151D1A /* MouseDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204716D37C2300B9C9AD /* MouseDelegate.cpp */; };
+		D153475F178AD62A00151D1A /* SystemDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204816D37C2300B9C9AD /* SystemDelegate.cpp */; };
+		D1534760178AD62A00151D1A /* TouchDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204916D37C2300B9C9AD /* TouchDelegate.cpp */; };
+		D1534761178AD62A00151D1A /* UpdateDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204A16D37C2300B9C9AD /* UpdateDelegate.cpp */; };
+		D1534762178AD62A00151D1A /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206016D37C5600B9C9AD /* Image.cpp */; };
+		D1534763178AD62A00151D1A /* ImageJpg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206116D37C5600B9C9AD /* ImageJpg.cpp */; };
+		D1534764178AD62A00151D1A /* ImageJpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206216D37C5600B9C9AD /* ImageJpt.cpp */; };
+		D1534765178AD62A00151D1A /* ImagePng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206316D37C5600B9C9AD /* ImagePng.cpp */; };
+		D1534766178AD62A00151D1A /* TimerPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7207316D37C7000B9C9AD /* TimerPosix.cpp */; };
+		D1534767178AD62A00151D1A /* OpenGL_State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A316D37E3100B9C9AD /* OpenGL_State.cpp */; };
+		D1534768178AD62A00151D1A /* OpenGL1_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A916D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp */; };
+		D1534769178AD62A00151D1A /* OpenGL1_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720AB16D37E3900B9C9AD /* OpenGL1_Texture.cpp */; };
+		D153476A178AD62A00151D1A /* ControllerDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D16AB63D16F1F8E000E971B0 /* ControllerDelegate.cpp */; };
+		D1534777178AD65F00151D1A /* Mac_AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1256A2D1727F6C60089C583 /* Mac_AppDelegate.mm */; };
+		D1534778178AD65F00151D1A /* Mac_OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1962A84170EC6FC0072A146 /* Mac_OpenGLView.mm */; };
+		D1534779178AD65F00151D1A /* Mac_Keys.mm in Sources */ = {isa = PBXBuildFile; fileRef = D11A21621712CF9A00BA9DA8 /* Mac_Keys.mm */; };
+		D153477A178AD65F00151D1A /* Mac_CocoaWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1962A88170EC7A20072A146 /* Mac_CocoaWindow.mm */; };
+		D153477B178AD65F00151D1A /* Mac_LoadingOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1962A8C170ECC400072A146 /* Mac_LoadingOverlay.mm */; };
+		D153477C178AD65F00151D1A /* Mac_Window.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1AF669C170B1E4800A43743 /* Mac_Window.mm */; };
+		D153477D178AD66700151D1A /* Mac_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF81415872B4900D31573 /* Mac_main.mm */; };
+		D153477E178AD66700151D1A /* Mac_Platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF81515872B4900D31573 /* Mac_Platform.mm */; };
+		D16AB63E16F1F8E000E971B0 /* ControllerDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D16AB63D16F1F8E000E971B0 /* ControllerDelegate.cpp */; };
+		D16AB63F16F1F8E000E971B0 /* ControllerDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D16AB63D16F1F8E000E971B0 /* ControllerDelegate.cpp */; };
+		D1962A86170EC6FC0072A146 /* Mac_OpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1962A84170EC6FC0072A146 /* Mac_OpenGLView.mm */; };
+		D1962A8A170EC7A20072A146 /* Mac_CocoaWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1962A88170EC7A20072A146 /* Mac_CocoaWindow.mm */; };
+		D1962A8E170ECC400072A146 /* Mac_LoadingOverlay.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1962A8C170ECC400072A146 /* Mac_LoadingOverlay.mm */; };
+		D197C5A415ED05F30017452F /* jpg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D197C5A015ED05F20017452F /* jpg.framework */; };
+		D197C5A515ED05F30017452F /* png.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D197C5A115ED05F20017452F /* png.framework */; };
+		D197C5A615ED05F30017452F /* zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D197C5A215ED05F20017452F /* zip.framework */; };
+		D197C5A715ED05F30017452F /* zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D197C5A315ED05F20017452F /* zlib.framework */; };
+		D1981C42140F82B00057C3AF /* OpenGL_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520C12E470B200E958D8 /* OpenGL_RenderSystem.cpp */; };
+		D1981C43140F82B00057C3AF /* OpenGL_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520E12E470B200E958D8 /* OpenGL_Texture.cpp */; };
+		D1981C44140F82B00057C3AF /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522E12E4713600E958D8 /* Color.cpp */; };
+		D1981C45140F82B00057C3AF /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522F12E4713600E958D8 /* Texture.cpp */; };
+		D1981C49140F82B00057C3AF /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F42F7AA11EB179A00B1C1DF /* RenderSystem.cpp */; };
+		D1981C4A140F82B00057C3AF /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3ED2611F98BAE001D1DDD /* Window.cpp */; };
+		D1981C73140F858F0057C3AF /* ApriliOSAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1981C5A140F85350057C3AF /* ApriliOSAppDelegate.mm */; };
+		D1981C75140F858F0057C3AF /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1981C5E140F85350057C3AF /* EAGLView.mm */; };
+		D1981C77140F858F0057C3AF /* PVRTexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1981C62140F85350057C3AF /* PVRTexture.mm */; };
+		D1981C78140F858F0057C3AF /* WBImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D1981C64140F85350057C3AF /* WBImage.m */; };
+		D1981C7A140F87060057C3AF /* AprilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1981C5C140F85350057C3AF /* AprilViewController.m */; };
+		D1A6260F170B78FF009ABE7B /* TimerPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7207316D37C7000B9C9AD /* TimerPosix.cpp */; };
+		D1AF669F170B1E5900A43743 /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F42F7AA11EB179A00B1C1DF /* RenderSystem.cpp */; };
+		D1AF66A0170B1E5900A43743 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3ED2611F98BAE001D1DDD /* Window.cpp */; };
+		D1AF66A1170B1E5900A43743 /* OpenGL_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520C12E470B200E958D8 /* OpenGL_RenderSystem.cpp */; };
+		D1AF66A2170B1E5900A43743 /* OpenGL_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520E12E470B200E958D8 /* OpenGL_Texture.cpp */; };
+		D1AF66A3170B1E5900A43743 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522E12E4713600E958D8 /* Color.cpp */; };
+		D1AF66A4170B1E5900A43743 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522F12E4713600E958D8 /* Texture.cpp */; };
+		D1AF66A5170B1E5900A43743 /* PixelShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F8A14BB106F005BD333 /* PixelShader.cpp */; };
+		D1AF66A6170B1E5900A43743 /* VertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F9214BB109B005BD333 /* VertexShader.cpp */; };
+		D1AF66A7170B1E5900A43743 /* april.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6097C150518B400EB077F /* april.cpp */; };
+		D1AF66A9170B1E5900A43743 /* Mac_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF81415872B4900D31573 /* Mac_main.mm */; };
+		D1AF66AA170B1E5900A43743 /* Mac_Platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = D14BF81515872B4900D31573 /* Mac_Platform.mm */; };
+		D1AF66AB170B1E5900A43743 /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF818158737A000D31573 /* Platform.cpp */; };
+		D1AF66AC170B1E5900A43743 /* RamTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF819158737A000D31573 /* RamTexture.cpp */; };
+		D1AF66AD170B1E5900A43743 /* aprilUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96915875F3300D31573 /* aprilUtil.cpp */; };
+		D1AF66AE170B1E5900A43743 /* EventDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204416D37C2300B9C9AD /* EventDelegate.cpp */; };
+		D1AF66AF170B1E5900A43743 /* InputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204516D37C2300B9C9AD /* InputDelegate.cpp */; };
+		D1AF66B0170B1E5900A43743 /* KeyboardDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204616D37C2300B9C9AD /* KeyboardDelegate.cpp */; };
+		D1AF66B1170B1E5900A43743 /* MouseDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204716D37C2300B9C9AD /* MouseDelegate.cpp */; };
+		D1AF66B2170B1E5900A43743 /* SystemDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204816D37C2300B9C9AD /* SystemDelegate.cpp */; };
+		D1AF66B3170B1E5900A43743 /* TouchDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204916D37C2300B9C9AD /* TouchDelegate.cpp */; };
+		D1AF66B4170B1E5900A43743 /* UpdateDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204A16D37C2300B9C9AD /* UpdateDelegate.cpp */; };
+		D1AF66B5170B1E5900A43743 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206016D37C5600B9C9AD /* Image.cpp */; };
+		D1AF66B6170B1E5900A43743 /* ImageJpg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206116D37C5600B9C9AD /* ImageJpg.cpp */; };
+		D1AF66B7170B1E5900A43743 /* ImageJpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206216D37C5600B9C9AD /* ImageJpt.cpp */; };
+		D1AF66B8170B1E5900A43743 /* ImagePng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206316D37C5600B9C9AD /* ImagePng.cpp */; };
+		D1AF66BA170B1E5900A43743 /* OpenGL_State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A316D37E3100B9C9AD /* OpenGL_State.cpp */; };
+		D1AF66BB170B1E5900A43743 /* OpenGL1_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A916D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp */; };
+		D1AF66BC170B1E5900A43743 /* OpenGL1_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720AB16D37E3900B9C9AD /* OpenGL1_Texture.cpp */; };
+		D1AF66BD170B1E5900A43743 /* ControllerDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D16AB63D16F1F8E000E971B0 /* ControllerDelegate.cpp */; };
+		D1AF66BF170B1E5900A43743 /* april.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E6098D1505191800EB077F /* april.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66C0170B1E5900A43743 /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E6098E1505191800EB077F /* Platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66C1170B1E5900A43743 /* Keys.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F42F7A311EB178C00B1C1DF /* Keys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66C2170B1E5900A43743 /* RenderSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F42F7A411EB178C00B1C1DF /* RenderSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66C3170B1E5900A43743 /* Window.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FA3ED1711F9817A001D1DDD /* Window.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66C4170B1E5900A43743 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4D0FE911FEE6C500F2F9F5 /* main.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66C5170B1E5900A43743 /* Timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FC8FA28122FA58F0092964C /* Timer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66C7170B1E5900A43743 /* PixelShader.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C04F8E14BB1091005BD333 /* PixelShader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66C8170B1E5900A43743 /* VertexShader.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C04F8F14BB1091005BD333 /* VertexShader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66CA170B1E5900A43743 /* aprilExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1B522712E4710D00E958D8 /* aprilExport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66CB170B1E5900A43743 /* aprilUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D14BF81E158737B300D31573 /* aprilUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66CC170B1E5900A43743 /* RamTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = D14BF81F158737B300D31573 /* RamTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66CD170B1E5900A43743 /* EventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203116D37B2700B9C9AD /* EventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66CE170B1E5900A43743 /* Image.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203216D37B2700B9C9AD /* Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66CF170B1E5900A43743 /* InputDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203316D37B2700B9C9AD /* InputDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66D0170B1E5900A43743 /* KeyboardDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203416D37B2700B9C9AD /* KeyboardDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66D1170B1E5900A43743 /* MouseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203516D37B2700B9C9AD /* MouseDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66D2170B1E5900A43743 /* SystemDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203616D37B2700B9C9AD /* SystemDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66D3170B1E5900A43743 /* TouchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203716D37B2700B9C9AD /* TouchDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66D4170B1E5900A43743 /* UpdateDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203816D37B2700B9C9AD /* UpdateDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66D5170B1E5900A43743 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1B522812E4710D00E958D8 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66D6170B1E5900A43743 /* Texture.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1B522912E4710D00E958D8 /* Texture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AF66E3170B1E5900A43743 /* jpg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D197C5A015ED05F20017452F /* jpg.framework */; };
+		D1AF66E4170B1E5900A43743 /* png.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D197C5A115ED05F20017452F /* png.framework */; };
+		D1AF66E5170B1E5900A43743 /* zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D197C5A215ED05F20017452F /* zip.framework */; };
+		D1AF66E6170B1E5900A43743 /* zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D197C5A315ED05F20017452F /* zlib.framework */; };
+		D1AF66E7170B1E5900A43743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CB6B6415CA905900B927BC /* Foundation.framework */; };
+		D1AF66E9170B1E5900A43743 /* gtypes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42F83111EB1A9700B1C1DF /* gtypes.framework */; };
+		D1AF66EA170B1E5900A43743 /* hltypes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42F83311EB1A9700B1C1DF /* hltypes.framework */; };
+		D1AF66EB170B1E5900A43743 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42FACC11EB341E00B1C1DF /* OpenGL.framework */; };
+		D1AF66EC170B1E5900A43743 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42FAD411EB342900B1C1DF /* Cocoa.framework */; };
+		D1AF66F6170B1E8800A43743 /* Mac_Window.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1AF669C170B1E4800A43743 /* Mac_Window.mm */; };
+		D1CB6B6515CA905900B927BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CB6B6415CA905900B927BC /* Foundation.framework */; };
+		D1E7203916D37B2700B9C9AD /* EventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203116D37B2700B9C9AD /* EventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E7203A16D37B2700B9C9AD /* Image.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203216D37B2700B9C9AD /* Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E7203B16D37B2700B9C9AD /* InputDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203316D37B2700B9C9AD /* InputDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E7203C16D37B2700B9C9AD /* KeyboardDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203416D37B2700B9C9AD /* KeyboardDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E7203D16D37B2700B9C9AD /* MouseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203516D37B2700B9C9AD /* MouseDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E7203E16D37B2700B9C9AD /* SystemDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203616D37B2700B9C9AD /* SystemDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E7203F16D37B2700B9C9AD /* TouchDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203716D37B2700B9C9AD /* TouchDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E7204016D37B2700B9C9AD /* UpdateDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E7203816D37B2700B9C9AD /* UpdateDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E7204B16D37C2300B9C9AD /* EventDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204416D37C2300B9C9AD /* EventDelegate.cpp */; };
+		D1E7204C16D37C2300B9C9AD /* EventDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204416D37C2300B9C9AD /* EventDelegate.cpp */; };
+		D1E7204E16D37C2300B9C9AD /* InputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204516D37C2300B9C9AD /* InputDelegate.cpp */; };
+		D1E7204F16D37C2300B9C9AD /* InputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204516D37C2300B9C9AD /* InputDelegate.cpp */; };
+		D1E7205116D37C2300B9C9AD /* KeyboardDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204616D37C2300B9C9AD /* KeyboardDelegate.cpp */; };
+		D1E7205216D37C2300B9C9AD /* KeyboardDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204616D37C2300B9C9AD /* KeyboardDelegate.cpp */; };
+		D1E7205416D37C2300B9C9AD /* MouseDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204716D37C2300B9C9AD /* MouseDelegate.cpp */; };
+		D1E7205516D37C2300B9C9AD /* MouseDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204716D37C2300B9C9AD /* MouseDelegate.cpp */; };
+		D1E7205716D37C2300B9C9AD /* SystemDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204816D37C2300B9C9AD /* SystemDelegate.cpp */; };
+		D1E7205816D37C2300B9C9AD /* SystemDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204816D37C2300B9C9AD /* SystemDelegate.cpp */; };
+		D1E7205A16D37C2300B9C9AD /* TouchDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204916D37C2300B9C9AD /* TouchDelegate.cpp */; };
+		D1E7205B16D37C2300B9C9AD /* TouchDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204916D37C2300B9C9AD /* TouchDelegate.cpp */; };
+		D1E7205D16D37C2300B9C9AD /* UpdateDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204A16D37C2300B9C9AD /* UpdateDelegate.cpp */; };
+		D1E7205E16D37C2300B9C9AD /* UpdateDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204A16D37C2300B9C9AD /* UpdateDelegate.cpp */; };
+		D1E7206416D37C5600B9C9AD /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206016D37C5600B9C9AD /* Image.cpp */; };
+		D1E7206516D37C5600B9C9AD /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206016D37C5600B9C9AD /* Image.cpp */; };
+		D1E7206716D37C5600B9C9AD /* ImageJpg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206116D37C5600B9C9AD /* ImageJpg.cpp */; };
+		D1E7206816D37C5600B9C9AD /* ImageJpg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206116D37C5600B9C9AD /* ImageJpg.cpp */; };
+		D1E7206A16D37C5600B9C9AD /* ImageJpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206216D37C5600B9C9AD /* ImageJpt.cpp */; };
+		D1E7206B16D37C5600B9C9AD /* ImageJpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206216D37C5600B9C9AD /* ImageJpt.cpp */; };
+		D1E7206D16D37C5600B9C9AD /* ImagePng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206316D37C5600B9C9AD /* ImagePng.cpp */; };
+		D1E7206E16D37C5600B9C9AD /* ImagePng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206316D37C5600B9C9AD /* ImagePng.cpp */; };
+		D1E7207216D37C6A00B9C9AD /* TimerSDL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7207116D37C6A00B9C9AD /* TimerSDL.cpp */; };
+		D1E7207416D37C7000B9C9AD /* TimerPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7207316D37C7000B9C9AD /* TimerPosix.cpp */; };
+		D1E720A516D37E3100B9C9AD /* OpenGL_State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A316D37E3100B9C9AD /* OpenGL_State.cpp */; };
+		D1E720A616D37E3100B9C9AD /* OpenGL_State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A316D37E3100B9C9AD /* OpenGL_State.cpp */; };
+		D1E720AD16D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A916D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp */; };
+		D1E720AE16D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A916D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp */; };
+		D1E720B116D37E3900B9C9AD /* OpenGL1_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720AB16D37E3900B9C9AD /* OpenGL1_Texture.cpp */; };
+		D1E720B216D37E3900B9C9AD /* OpenGL1_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720AB16D37E3900B9C9AD /* OpenGL1_Texture.cpp */; };
+		D1E720BA16D37E4200B9C9AD /* OpenGLES_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720B516D37E4200B9C9AD /* OpenGLES_RenderSystem.cpp */; };
+		D1E720BE16D37E4200B9C9AD /* OpenGLES_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720B716D37E4200B9C9AD /* OpenGLES_Texture.cpp */; };
+		D1E720C716D37E5800B9C9AD /* OpenGLES1_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720C316D37E5800B9C9AD /* OpenGLES1_RenderSystem.cpp */; };
+		D1E720C816D37E5800B9C9AD /* OpenGLES1_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720C516D37E5800B9C9AD /* OpenGLES1_Texture.cpp */; };
+		D1F27AC2177A2DF700E5C131 /* OpenGL_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520C12E470B200E958D8 /* OpenGL_RenderSystem.cpp */; };
+		D1F27AC3177A2DF700E5C131 /* OpenGL_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B520E12E470B200E958D8 /* OpenGL_Texture.cpp */; };
+		D1F27AC4177A2DF700E5C131 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522E12E4713600E958D8 /* Color.cpp */; };
+		D1F27AC5177A2DF700E5C131 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B522F12E4713600E958D8 /* Texture.cpp */; };
+		D1F27AC6177A2DF700E5C131 /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F42F7AA11EB179A00B1C1DF /* RenderSystem.cpp */; };
+		D1F27AC7177A2DF700E5C131 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FA3ED2611F98BAE001D1DDD /* Window.cpp */; };
+		D1F27AC8177A2DF700E5C131 /* PixelShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F8A14BB106F005BD333 /* PixelShader.cpp */; };
+		D1F27AC9177A2DF700E5C131 /* VertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9C04F9214BB109B005BD333 /* VertexShader.cpp */; };
+		D1F27ACA177A2DF700E5C131 /* april.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9E6097C150518B400EB077F /* april.cpp */; };
+		D1F27ACB177A2DF700E5C131 /* Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF818158737A000D31573 /* Platform.cpp */; };
+		D1F27ACC177A2DF700E5C131 /* RamTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF819158737A000D31573 /* RamTexture.cpp */; };
+		D1F27ACD177A2DF700E5C131 /* aprilUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14BF96915875F3300D31573 /* aprilUtil.cpp */; };
+		D1F27ACE177A2DF700E5C131 /* EventDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204416D37C2300B9C9AD /* EventDelegate.cpp */; };
+		D1F27ACF177A2DF700E5C131 /* InputDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204516D37C2300B9C9AD /* InputDelegate.cpp */; };
+		D1F27AD0177A2DF700E5C131 /* KeyboardDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204616D37C2300B9C9AD /* KeyboardDelegate.cpp */; };
+		D1F27AD1177A2DF700E5C131 /* MouseDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204716D37C2300B9C9AD /* MouseDelegate.cpp */; };
+		D1F27AD2177A2DF700E5C131 /* SystemDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204816D37C2300B9C9AD /* SystemDelegate.cpp */; };
+		D1F27AD3177A2DF700E5C131 /* TouchDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204916D37C2300B9C9AD /* TouchDelegate.cpp */; };
+		D1F27AD4177A2DF700E5C131 /* UpdateDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7204A16D37C2300B9C9AD /* UpdateDelegate.cpp */; };
+		D1F27AD5177A2DF700E5C131 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206016D37C5600B9C9AD /* Image.cpp */; };
+		D1F27AD6177A2DF700E5C131 /* ImageJpg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206116D37C5600B9C9AD /* ImageJpg.cpp */; };
+		D1F27AD7177A2DF700E5C131 /* ImageJpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206216D37C5600B9C9AD /* ImageJpt.cpp */; };
+		D1F27AD8177A2DF700E5C131 /* ImagePng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7206316D37C5600B9C9AD /* ImagePng.cpp */; };
+		D1F27AD9177A2DF700E5C131 /* TimerPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E7207316D37C7000B9C9AD /* TimerPosix.cpp */; };
+		D1F27ADA177A2DF700E5C131 /* OpenGL_State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A316D37E3100B9C9AD /* OpenGL_State.cpp */; };
+		D1F27ADB177A2DF700E5C131 /* OpenGL1_RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720A916D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp */; };
+		D1F27ADC177A2DF700E5C131 /* OpenGL1_Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1E720AB16D37E3900B9C9AD /* OpenGL1_Texture.cpp */; };
+		D1F27AE1177A2DF700E5C131 /* ControllerDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D16AB63D16F1F8E000E971B0 /* ControllerDelegate.cpp */; };
+		D1F27AE2177A2DF700E5C131 /* OpenKODE_Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1134F19175CDA8D00BFF3A2 /* OpenKODE_Window.cpp */; };
+		D1F27AE3177A2DF700E5C131 /* OpenKODE_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1134F1D175CDAC600BFF3A2 /* OpenKODE_main.cpp */; };
+		D1F27AE4177A2DF700E5C131 /* OpenKODE_Platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1134F1E175CDAC600BFF3A2 /* OpenKODE_Platform.cpp */; };
+		D1F27AE5177A2DF700E5C131 /* egl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1134F21175CDAD200BFF3A2 /* egl.cpp */; };
+		D1F27AE6177A2DF700E5C131 /* OpenKODE_Keys.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1397A44175F32CE00DC02D7 /* OpenKODE_Keys.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F1B520C12E470B200E958D8 /* OpenGL_RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGL_RenderSystem.cpp; path = rendersystems/OpenGL/OpenGL_RenderSystem.cpp; sourceTree = "<group>"; };
+		7F1B520D12E470B200E958D8 /* OpenGL_RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGL_RenderSystem.h; path = rendersystems/OpenGL/OpenGL_RenderSystem.h; sourceTree = "<group>"; };
+		7F1B520E12E470B200E958D8 /* OpenGL_Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGL_Texture.cpp; path = rendersystems/OpenGL/OpenGL_Texture.cpp; sourceTree = "<group>"; };
+		7F1B520F12E470B200E958D8 /* OpenGL_Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGL_Texture.h; path = rendersystems/OpenGL/OpenGL_Texture.h; sourceTree = "<group>"; };
+		7F1B522712E4710D00E958D8 /* aprilExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aprilExport.h; path = include/april/aprilExport.h; sourceTree = "<group>"; };
+		7F1B522812E4710D00E958D8 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Color.h; path = include/april/Color.h; sourceTree = "<group>"; };
+		7F1B522912E4710D00E958D8 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Texture.h; path = include/april/Texture.h; sourceTree = "<group>"; };
+		7F1B522E12E4713600E958D8 /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Color.cpp; path = src/Color.cpp; sourceTree = "<group>"; };
+		7F1B522F12E4713600E958D8 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Texture.cpp; path = src/Texture.cpp; sourceTree = "<group>"; };
+		7F42F7A311EB178C00B1C1DF /* Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Keys.h; path = include/april/Keys.h; sourceTree = "<group>"; };
+		7F42F7A411EB178C00B1C1DF /* RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderSystem.h; path = include/april/RenderSystem.h; sourceTree = "<group>"; };
+		7F42F7AA11EB179A00B1C1DF /* RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderSystem.cpp; path = src/RenderSystem.cpp; sourceTree = "<group>"; };
+		7F42F83111EB1A9700B1C1DF /* gtypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtypes.framework; path = Library/Frameworks/gtypes.framework; sourceTree = SDKROOT; };
+		7F42F83311EB1A9700B1C1DF /* hltypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hltypes.framework; path = Library/Frameworks/hltypes.framework; sourceTree = SDKROOT; };
+		7F42FACC11EB341E00B1C1DF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		7F42FAD411EB342900B1C1DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7F4D0FE911FEE6C500F2F9F5 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = include/april/main.h; sourceTree = "<group>"; };
+		7FA3ED1711F9817A001D1DDD /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = include/april/Window.h; sourceTree = "<group>"; };
+		7FA3ED2611F98BAE001D1DDD /* Window.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = Window.cpp; path = src/Window.cpp; sourceTree = "<group>"; };
+		7FC8FA28122FA58F0092964C /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = include/april/Timer.h; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* april.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = april.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9313EB814FE64CE003BC7AB /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../lib/mac/SDL.framework; sourceTree = "<group>"; };
+		C9C04F8A14BB106F005BD333 /* PixelShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PixelShader.cpp; path = src/PixelShader.cpp; sourceTree = "<group>"; };
+		C9C04F8E14BB1091005BD333 /* PixelShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelShader.h; path = include/april/PixelShader.h; sourceTree = "<group>"; };
+		C9C04F8F14BB1091005BD333 /* VertexShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VertexShader.h; path = include/april/VertexShader.h; sourceTree = "<group>"; };
+		C9C04F9214BB109B005BD333 /* VertexShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VertexShader.cpp; path = src/VertexShader.cpp; sourceTree = "<group>"; };
+		C9E6097C150518B400EB077F /* april.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = april.cpp; path = src/april.cpp; sourceTree = "<group>"; };
+		C9E6098D1505191800EB077F /* april.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = april.h; path = include/april/april.h; sourceTree = "<group>"; };
+		C9E6098E1505191800EB077F /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = include/april/Platform.h; sourceTree = "<group>"; };
+		D1134F17175CDA3300BFF3A2 /* libapril-kd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libapril-kd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1134F19175CDA8D00BFF3A2 /* OpenKODE_Window.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = OpenKODE_Window.cpp; path = windowsystems/OpenKODE/OpenKODE_Window.cpp; sourceTree = "<group>"; };
+		D1134F1A175CDA8D00BFF3A2 /* OpenKODE_Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenKODE_Window.h; path = windowsystems/OpenKODE/OpenKODE_Window.h; sourceTree = "<group>"; };
+		D1134F1D175CDAC600BFF3A2 /* OpenKODE_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenKODE_main.cpp; path = platforms/OpenKODE_main.cpp; sourceTree = "<group>"; };
+		D1134F1E175CDAC600BFF3A2 /* OpenKODE_Platform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenKODE_Platform.cpp; path = platforms/OpenKODE_Platform.cpp; sourceTree = "<group>"; };
+		D1134F21175CDAD200BFF3A2 /* egl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = egl.cpp; path = src/egl.cpp; sourceTree = "<group>"; };
+		D1134F22175CDAD200BFF3A2 /* egl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = egl.h; path = src/egl.h; sourceTree = "<group>"; };
+		D11A21621712CF9A00BA9DA8 /* Mac_Keys.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Mac_Keys.mm; path = windowsystems/Mac/Mac_Keys.mm; sourceTree = "<group>"; };
+		D11A21641712D01500BA9DA8 /* Mac_Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Mac_Keys.h; path = windowsystems/Mac/Mac_Keys.h; sourceTree = "<group>"; };
+		D1256A2C1727F6C60089C583 /* Mac_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mac_AppDelegate.h; path = windowsystems/Mac/Mac_AppDelegate.h; sourceTree = "<group>"; };
+		D1256A2D1727F6C60089C583 /* Mac_AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Mac_AppDelegate.mm; path = windowsystems/Mac/Mac_AppDelegate.mm; sourceTree = "<group>"; };
+		D12EA4BF185B28400082CC20 /* IWinRT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IWinRT.h; path = windowsystems/WinRT/IWinRT.h; sourceTree = "<group>"; };
+		D12EA4C0185B28400082CC20 /* pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pch.h; path = windowsystems/WinRT/pch.h; sourceTree = "<group>"; };
+		D12EA4C1185B28400082CC20 /* WinP8_App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WinP8_App.cpp; path = windowsystems/WinRT/WinP8_App.cpp; sourceTree = "<group>"; };
+		D12EA4C2185B28400082CC20 /* WinP8_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WinP8_App.h; path = windowsystems/WinRT/WinP8_App.h; sourceTree = "<group>"; };
+		D12EA4C3185B28400082CC20 /* WinP8_AppLauncher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WinP8_AppLauncher.cpp; path = windowsystems/WinRT/WinP8_AppLauncher.cpp; sourceTree = "<group>"; };
+		D12EA4C4185B28400082CC20 /* WinP8_AppLauncher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WinP8_AppLauncher.h; path = windowsystems/WinRT/WinP8_AppLauncher.h; sourceTree = "<group>"; };
+		D12EA4C5185B28400082CC20 /* WinP8_KeyboardInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WinP8_KeyboardInterface.cpp; path = windowsystems/WinRT/WinP8_KeyboardInterface.cpp; sourceTree = "<group>"; };
+		D12EA4C6185B28400082CC20 /* WinP8_KeyboardInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WinP8_KeyboardInterface.h; path = windowsystems/WinRT/WinP8_KeyboardInterface.h; sourceTree = "<group>"; };
+		D12EA4C7185B28400082CC20 /* WinRT_BaseApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WinRT_BaseApp.cpp; path = windowsystems/WinRT/WinRT_BaseApp.cpp; sourceTree = "<group>"; };
+		D12EA4C8185B28400082CC20 /* WinRT_BaseApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WinRT_BaseApp.h; path = windowsystems/WinRT/WinRT_BaseApp.h; sourceTree = "<group>"; };
+		D12EA4C9185B28400082CC20 /* WinRT_XamlApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WinRT_XamlApp.cpp; path = windowsystems/WinRT/WinRT_XamlApp.cpp; sourceTree = "<group>"; };
+		D12EA4CA185B28400082CC20 /* WinRT_XamlApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WinRT_XamlApp.h; path = windowsystems/WinRT/WinRT_XamlApp.h; sourceTree = "<group>"; };
+		D12EA4CB185B28400082CC20 /* WinRT_XamlOverlay.xaml */ = {isa = PBXFileReference; lastKnownFileType = text; name = WinRT_XamlOverlay.xaml; path = windowsystems/WinRT/WinRT_XamlOverlay.xaml; sourceTree = "<group>"; };
+		D12EA4CC185B28400082CC20 /* WinRT_XamlOverlay.xaml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WinRT_XamlOverlay.xaml.cpp; path = windowsystems/WinRT/WinRT_XamlOverlay.xaml.cpp; sourceTree = "<group>"; };
+		D12EA4CD185B28400082CC20 /* WinRT_XamlOverlay.xaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WinRT_XamlOverlay.xaml.h; path = windowsystems/WinRT/WinRT_XamlOverlay.xaml.h; sourceTree = "<group>"; };
+		D12EA4CE185B28400082CC20 /* WinRT.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WinRT.cpp; path = windowsystems/WinRT/WinRT.cpp; sourceTree = "<group>"; };
+		D12EA4CF185B28400082CC20 /* WinRT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WinRT.h; path = windowsystems/WinRT/WinRT.h; sourceTree = "<group>"; };
+		D136818C187BFB3E00E66E32 /* main_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main_base.cpp; path = src/main_base.cpp; sourceTree = "<group>"; };
+		D136818D187BFB3E00E66E32 /* RenderState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderState.cpp; path = src/RenderState.cpp; sourceTree = "<group>"; };
+		D136819A187BFB6600E66E32 /* Android_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Android_main.h; path = include/april/Android_main.h; sourceTree = "<group>"; };
+		D136819B187BFB6600E66E32 /* androidUtilJNI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = androidUtilJNI.h; path = include/april/androidUtilJNI.h; sourceTree = "<group>"; };
+		D136819C187BFB6600E66E32 /* ControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerDelegate.h; path = include/april/ControllerDelegate.h; sourceTree = "<group>"; };
+		D136819D187BFB6600E66E32 /* main_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main_base.h; path = include/april/main_base.h; sourceTree = "<group>"; };
+		D136819E187BFB6600E66E32 /* OpenKODE_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenKODE_main.h; path = include/april/OpenKODE_main.h; sourceTree = "<group>"; };
+		D136819F187BFB6600E66E32 /* RenderState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderState.h; path = include/april/RenderState.h; sourceTree = "<group>"; };
+		D13681A0187BFB6600E66E32 /* Standard_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Standard_main.h; path = include/april/Standard_main.h; sourceTree = "<group>"; };
+		D13681A1187BFB6600E66E32 /* Win32_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Win32_main.h; path = include/april/Win32_main.h; sourceTree = "<group>"; };
+		D13681A2187BFB6600E66E32 /* WinRT_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WinRT_main.h; path = include/april/WinRT_main.h; sourceTree = "<group>"; };
+		D1397A44175F32CE00DC02D7 /* OpenKODE_Keys.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenKODE_Keys.cpp; path = windowsystems/OpenKODE/OpenKODE_Keys.cpp; sourceTree = "<group>"; };
+		D1397A45175F32CE00DC02D7 /* OpenKODE_Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenKODE_Keys.h; path = windowsystems/OpenKODE/OpenKODE_Keys.h; sourceTree = "<group>"; };
+		D1397A99175F834800DC02D7 /* iOS_devices.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOS_devices.mm; path = platforms/iOS_devices.mm; sourceTree = "<group>"; };
+		D1397A9C175F85E200DC02D7 /* AndroidJNI_Keys.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AndroidJNI_Keys.cpp; path = windowsystems/AndroidJNI/AndroidJNI_Keys.cpp; sourceTree = "<group>"; };
+		D1397A9D175F85E200DC02D7 /* AndroidJNI_Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AndroidJNI_Keys.h; path = windowsystems/AndroidJNI/AndroidJNI_Keys.h; sourceTree = "<group>"; };
+		D14BF80915872B2600D31573 /* SDL_Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDL_Window.cpp; path = windowsystems/SDL/SDL_Window.cpp; sourceTree = "<group>"; };
+		D14BF80A15872B2600D31573 /* SDL_Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDL_Window.h; path = windowsystems/SDL/SDL_Window.h; sourceTree = "<group>"; };
+		D14BF80D15872B3700D31573 /* iOS_Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOS_Window.h; path = windowsystems/iOS/iOS_Window.h; sourceTree = "<group>"; };
+		D14BF80E15872B3700D31573 /* iOS_Window.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOS_Window.mm; path = windowsystems/iOS/iOS_Window.mm; sourceTree = "<group>"; };
+		D14BF81015872B4000D31573 /* iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOS_main.mm; path = platforms/iOS_main.mm; sourceTree = "<group>"; };
+		D14BF81115872B4000D31573 /* iOS_Platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOS_Platform.mm; path = platforms/iOS_Platform.mm; sourceTree = "<group>"; };
+		D14BF81415872B4900D31573 /* Mac_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Mac_main.mm; path = platforms/Mac_main.mm; sourceTree = "<group>"; };
+		D14BF81515872B4900D31573 /* Mac_Platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Mac_Platform.mm; path = platforms/Mac_Platform.mm; sourceTree = "<group>"; };
+		D14BF818158737A000D31573 /* Platform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Platform.cpp; path = src/Platform.cpp; sourceTree = "<group>"; };
+		D14BF819158737A000D31573 /* RamTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RamTexture.cpp; path = src/RamTexture.cpp; sourceTree = "<group>"; };
+		D14BF81E158737B300D31573 /* aprilUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aprilUtil.h; path = include/april/aprilUtil.h; sourceTree = "<group>"; };
+		D14BF81F158737B300D31573 /* RamTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamTexture.h; path = include/april/RamTexture.h; sourceTree = "<group>"; };
+		D14BF96915875F3300D31573 /* aprilUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = aprilUtil.cpp; path = src/aprilUtil.cpp; sourceTree = "<group>"; };
+		D1534776178AD62A00151D1A /* libapril.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libapril.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1681BA618D768400088FC68 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = iOS.xcconfig; path = xcconfig/iOS.xcconfig; sourceTree = "<group>"; };
+		D1681BA718D768400088FC68 /* Mac.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Mac.xcconfig; path = xcconfig/Mac.xcconfig; sourceTree = "<group>"; };
+		D16AB63D16F1F8E000E971B0 /* ControllerDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ControllerDelegate.cpp; path = src/delegates/ControllerDelegate.cpp; sourceTree = "<group>"; };
+		D1962A83170EC6FC0072A146 /* Mac_OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mac_OpenGLView.h; path = windowsystems/Mac/Mac_OpenGLView.h; sourceTree = "<group>"; };
+		D1962A84170EC6FC0072A146 /* Mac_OpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Mac_OpenGLView.mm; path = windowsystems/Mac/Mac_OpenGLView.mm; sourceTree = "<group>"; };
+		D1962A87170EC7A20072A146 /* Mac_CocoaWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mac_CocoaWindow.h; path = windowsystems/Mac/Mac_CocoaWindow.h; sourceTree = "<group>"; };
+		D1962A88170EC7A20072A146 /* Mac_CocoaWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Mac_CocoaWindow.mm; path = windowsystems/Mac/Mac_CocoaWindow.mm; sourceTree = "<group>"; };
+		D1962A8B170ECC400072A146 /* Mac_LoadingOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mac_LoadingOverlay.h; path = windowsystems/Mac/Mac_LoadingOverlay.h; sourceTree = "<group>"; };
+		D1962A8C170ECC400072A146 /* Mac_LoadingOverlay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Mac_LoadingOverlay.mm; path = windowsystems/Mac/Mac_LoadingOverlay.mm; sourceTree = "<group>"; };
+		D197C5A015ED05F20017452F /* jpg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = jpg.framework; path = ../../__build__/products/Debug/jpg.framework; sourceTree = "<group>"; };
+		D197C5A115ED05F20017452F /* png.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = png.framework; path = ../../__build__/products/Debug/png.framework; sourceTree = "<group>"; };
+		D197C5A215ED05F20017452F /* zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = zip.framework; path = ../../__build__/products/Debug/zip.framework; sourceTree = "<group>"; };
+		D197C5A315ED05F20017452F /* zlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = zlib.framework; path = ../../__build__/products/Debug/zlib.framework; sourceTree = "<group>"; };
+		D1981C30140F824B0057C3AF /* libapril.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libapril.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1981C4E140F849A0057C3AF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		D1981C50140F84A10057C3AF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D1981C52140F84AA0057C3AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		D1981C54140F84B00057C3AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1981C56140F84B60057C3AF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1981C59140F85350057C3AF /* ApriliOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApriliOSAppDelegate.h; path = windowsystems/iOS/ApriliOSAppDelegate.h; sourceTree = "<group>"; };
+		D1981C5A140F85350057C3AF /* ApriliOSAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ApriliOSAppDelegate.mm; path = windowsystems/iOS/ApriliOSAppDelegate.mm; sourceTree = "<group>"; };
+		D1981C5B140F85350057C3AF /* AprilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AprilViewController.h; path = windowsystems/iOS/AprilViewController.h; sourceTree = "<group>"; };
+		D1981C5C140F85350057C3AF /* AprilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AprilViewController.m; path = windowsystems/iOS/AprilViewController.m; sourceTree = "<group>"; };
+		D1981C5D140F85350057C3AF /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EAGLView.h; path = windowsystems/iOS/EAGLView.h; sourceTree = "<group>"; };
+		D1981C5E140F85350057C3AF /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = EAGLView.mm; path = windowsystems/iOS/EAGLView.mm; sourceTree = "<group>"; };
+		D1981C61140F85350057C3AF /* PVRTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PVRTexture.h; path = windowsystems/iOS/PVRTexture.h; sourceTree = "<group>"; };
+		D1981C62140F85350057C3AF /* PVRTexture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PVRTexture.mm; path = windowsystems/iOS/PVRTexture.mm; sourceTree = "<group>"; };
+		D1981C63140F85350057C3AF /* WBImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBImage.h; path = windowsystems/iOS/WBImage.h; sourceTree = "<group>"; };
+		D1981C64140F85350057C3AF /* WBImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBImage.m; path = windowsystems/iOS/WBImage.m; sourceTree = "<group>"; };
+		D1AF669B170B1E4800A43743 /* Mac_Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Mac_Window.h; path = windowsystems/Mac/Mac_Window.h; sourceTree = "<group>"; };
+		D1AF669C170B1E4800A43743 /* Mac_Window.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = Mac_Window.mm; path = windowsystems/Mac/Mac_Window.mm; sourceTree = "<group>"; };
+		D1AF66F3170B1E5900A43743 /* april.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = april.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BCC5791615A2620049CEA9 /* Win32_Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Win32_Window.cpp; path = windowsystems/Win32/Win32_Window.cpp; sourceTree = "<group>"; };
+		D1BCC57A1615A2620049CEA9 /* Win32_Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Win32_Window.h; path = windowsystems/Win32/Win32_Window.h; sourceTree = "<group>"; };
+		D1BCC57D1615A2900049CEA9 /* AndroidJNI_Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AndroidJNI_Window.cpp; path = windowsystems/AndroidJNI/AndroidJNI_Window.cpp; sourceTree = "<group>"; };
+		D1BCC57E1615A2900049CEA9 /* AndroidJNI_Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AndroidJNI_Window.h; path = windowsystems/AndroidJNI/AndroidJNI_Window.h; sourceTree = "<group>"; };
+		D1BCC57F1615A2B20049CEA9 /* Android_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Android_main.cpp; path = platforms/Android_main.cpp; sourceTree = "<group>"; };
+		D1BCC5801615A2B20049CEA9 /* Android_Platform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Android_Platform.cpp; path = platforms/Android_Platform.cpp; sourceTree = "<group>"; };
+		D1BCC5831615A2B20049CEA9 /* Win32_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Win32_main.cpp; path = platforms/Win32_main.cpp; sourceTree = "<group>"; };
+		D1BCC5841615A2B20049CEA9 /* Win32_Platform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Win32_Platform.cpp; path = platforms/Win32_Platform.cpp; sourceTree = "<group>"; };
+		D1CB6B6415CA905900B927BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D1CC873C177D9FE500E47EBF /* AndroidJNI_Platform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AndroidJNI_Platform.cpp; path = platforms/AndroidJNI_Platform.cpp; sourceTree = "<group>"; };
+		D1E7203116D37B2700B9C9AD /* EventDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDelegate.h; path = include/april/EventDelegate.h; sourceTree = "<group>"; };
+		D1E7203216D37B2700B9C9AD /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = include/april/Image.h; sourceTree = "<group>"; };
+		D1E7203316D37B2700B9C9AD /* InputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputDelegate.h; path = include/april/InputDelegate.h; sourceTree = "<group>"; };
+		D1E7203416D37B2700B9C9AD /* KeyboardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardDelegate.h; path = include/april/KeyboardDelegate.h; sourceTree = "<group>"; };
+		D1E7203516D37B2700B9C9AD /* MouseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MouseDelegate.h; path = include/april/MouseDelegate.h; sourceTree = "<group>"; };
+		D1E7203616D37B2700B9C9AD /* SystemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemDelegate.h; path = include/april/SystemDelegate.h; sourceTree = "<group>"; };
+		D1E7203716D37B2700B9C9AD /* TouchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchDelegate.h; path = include/april/TouchDelegate.h; sourceTree = "<group>"; };
+		D1E7203816D37B2700B9C9AD /* UpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateDelegate.h; path = include/april/UpdateDelegate.h; sourceTree = "<group>"; };
+		D1E7204416D37C2300B9C9AD /* EventDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventDelegate.cpp; path = src/delegates/EventDelegate.cpp; sourceTree = "<group>"; };
+		D1E7204516D37C2300B9C9AD /* InputDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputDelegate.cpp; path = src/delegates/InputDelegate.cpp; sourceTree = "<group>"; };
+		D1E7204616D37C2300B9C9AD /* KeyboardDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KeyboardDelegate.cpp; path = src/delegates/KeyboardDelegate.cpp; sourceTree = "<group>"; };
+		D1E7204716D37C2300B9C9AD /* MouseDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MouseDelegate.cpp; path = src/delegates/MouseDelegate.cpp; sourceTree = "<group>"; };
+		D1E7204816D37C2300B9C9AD /* SystemDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SystemDelegate.cpp; path = src/delegates/SystemDelegate.cpp; sourceTree = "<group>"; };
+		D1E7204916D37C2300B9C9AD /* TouchDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TouchDelegate.cpp; path = src/delegates/TouchDelegate.cpp; sourceTree = "<group>"; };
+		D1E7204A16D37C2300B9C9AD /* UpdateDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UpdateDelegate.cpp; path = src/delegates/UpdateDelegate.cpp; sourceTree = "<group>"; };
+		D1E7206016D37C5600B9C9AD /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Image.cpp; path = src/images/Image.cpp; sourceTree = "<group>"; };
+		D1E7206116D37C5600B9C9AD /* ImageJpg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageJpg.cpp; path = src/images/ImageJpg.cpp; sourceTree = "<group>"; };
+		D1E7206216D37C5600B9C9AD /* ImageJpt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImageJpt.cpp; path = src/images/ImageJpt.cpp; sourceTree = "<group>"; };
+		D1E7206316D37C5600B9C9AD /* ImagePng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ImagePng.cpp; path = src/images/ImagePng.cpp; sourceTree = "<group>"; };
+		D1E7207116D37C6A00B9C9AD /* TimerSDL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimerSDL.cpp; path = src/timers/TimerSDL.cpp; sourceTree = "<group>"; };
+		D1E7207316D37C7000B9C9AD /* TimerPosix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimerPosix.cpp; path = src/timers/TimerPosix.cpp; sourceTree = "<group>"; };
+		D1E7207616D37C7800B9C9AD /* TimerWin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TimerWin.cpp; path = src/timers/TimerWin.cpp; sourceTree = "<group>"; };
+		D1E7207C16D37CAB00B9C9AD /* WinRT_Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WinRT_Window.cpp; path = windowsystems/WinRT/WinRT_Window.cpp; sourceTree = "<group>"; };
+		D1E7207D16D37CAB00B9C9AD /* WinRT_Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WinRT_Window.h; path = windowsystems/WinRT/WinRT_Window.h; sourceTree = "<group>"; };
+		D1E7208416D37CE300B9C9AD /* DirectX9_PixelShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX9_PixelShader.cpp; path = rendersystems/DirectX/9/DirectX9_PixelShader.cpp; sourceTree = "<group>"; };
+		D1E7208516D37CE300B9C9AD /* DirectX9_PixelShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX9_PixelShader.h; path = rendersystems/DirectX/9/DirectX9_PixelShader.h; sourceTree = "<group>"; };
+		D1E7208616D37CE300B9C9AD /* DirectX9_RenderSystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX9_RenderSystem.cpp; path = rendersystems/DirectX/9/DirectX9_RenderSystem.cpp; sourceTree = "<group>"; };
+		D1E7208716D37CE300B9C9AD /* DirectX9_RenderSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX9_RenderSystem.h; path = rendersystems/DirectX/9/DirectX9_RenderSystem.h; sourceTree = "<group>"; };
+		D1E7208816D37CE300B9C9AD /* DirectX9_Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX9_Texture.cpp; path = rendersystems/DirectX/9/DirectX9_Texture.cpp; sourceTree = "<group>"; };
+		D1E7208916D37CE300B9C9AD /* DirectX9_Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX9_Texture.h; path = rendersystems/DirectX/9/DirectX9_Texture.h; sourceTree = "<group>"; };
+		D1E7208A16D37CE300B9C9AD /* DirectX9_VertexShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX9_VertexShader.cpp; path = rendersystems/DirectX/9/DirectX9_VertexShader.cpp; sourceTree = "<group>"; };
+		D1E7208B16D37CE300B9C9AD /* DirectX9_VertexShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX9_VertexShader.h; path = rendersystems/DirectX/9/DirectX9_VertexShader.h; sourceTree = "<group>"; };
+		D1E7208C16D37CEF00B9C9AD /* DirectX_RenderSystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX_RenderSystem.cpp; path = rendersystems/DirectX/DirectX_RenderSystem.cpp; sourceTree = "<group>"; };
+		D1E7208D16D37CEF00B9C9AD /* DirectX_RenderSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX_RenderSystem.h; path = rendersystems/DirectX/DirectX_RenderSystem.h; sourceTree = "<group>"; };
+		D1E7208E16D37CEF00B9C9AD /* DirectX_Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX_Texture.cpp; path = rendersystems/DirectX/DirectX_Texture.cpp; sourceTree = "<group>"; };
+		D1E7208F16D37CEF00B9C9AD /* DirectX_Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX_Texture.h; path = rendersystems/DirectX/DirectX_Texture.h; sourceTree = "<group>"; };
+		D1E7209016D37CF700B9C9AD /* DirectX11_PixelShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX11_PixelShader.cpp; path = rendersystems/DirectX/11/DirectX11_PixelShader.cpp; sourceTree = "<group>"; };
+		D1E7209116D37CF700B9C9AD /* DirectX11_PixelShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX11_PixelShader.h; path = rendersystems/DirectX/11/DirectX11_PixelShader.h; sourceTree = "<group>"; };
+		D1E7209216D37CF700B9C9AD /* DirectX11_RenderSystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX11_RenderSystem.cpp; path = rendersystems/DirectX/11/DirectX11_RenderSystem.cpp; sourceTree = "<group>"; };
+		D1E7209316D37CF700B9C9AD /* DirectX11_RenderSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX11_RenderSystem.h; path = rendersystems/DirectX/11/DirectX11_RenderSystem.h; sourceTree = "<group>"; };
+		D1E7209416D37CF700B9C9AD /* DirectX11_Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX11_Texture.cpp; path = rendersystems/DirectX/11/DirectX11_Texture.cpp; sourceTree = "<group>"; };
+		D1E7209516D37CF700B9C9AD /* DirectX11_Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX11_Texture.h; path = rendersystems/DirectX/11/DirectX11_Texture.h; sourceTree = "<group>"; };
+		D1E7209616D37CF700B9C9AD /* DirectX11_VertexShader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = DirectX11_VertexShader.cpp; path = rendersystems/DirectX/11/DirectX11_VertexShader.cpp; sourceTree = "<group>"; };
+		D1E7209716D37CF700B9C9AD /* DirectX11_VertexShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DirectX11_VertexShader.h; path = rendersystems/DirectX/11/DirectX11_VertexShader.h; sourceTree = "<group>"; };
+		D1E7209916D37D0600B9C9AD /* PixelShader_Colored.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = PixelShader_Colored.hlsl; path = "rendersystems/DirectX/11/default-shaders/PixelShader_Colored.hlsl"; sourceTree = "<group>"; };
+		D1E7209A16D37D0600B9C9AD /* PixelShader_ColoredTextured.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = PixelShader_ColoredTextured.hlsl; path = "rendersystems/DirectX/11/default-shaders/PixelShader_ColoredTextured.hlsl"; sourceTree = "<group>"; };
+		D1E7209B16D37D0600B9C9AD /* PixelShader_Plain.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = PixelShader_Plain.hlsl; path = "rendersystems/DirectX/11/default-shaders/PixelShader_Plain.hlsl"; sourceTree = "<group>"; };
+		D1E7209C16D37D0600B9C9AD /* PixelShader_Textured.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = PixelShader_Textured.hlsl; path = "rendersystems/DirectX/11/default-shaders/PixelShader_Textured.hlsl"; sourceTree = "<group>"; };
+		D1E7209D16D37D0600B9C9AD /* VertexShader_Colored.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = VertexShader_Colored.hlsl; path = "rendersystems/DirectX/11/default-shaders/VertexShader_Colored.hlsl"; sourceTree = "<group>"; };
+		D1E7209E16D37D0600B9C9AD /* VertexShader_ColoredTextured.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = VertexShader_ColoredTextured.hlsl; path = "rendersystems/DirectX/11/default-shaders/VertexShader_ColoredTextured.hlsl"; sourceTree = "<group>"; };
+		D1E7209F16D37D0600B9C9AD /* VertexShader_Plain.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = VertexShader_Plain.hlsl; path = "rendersystems/DirectX/11/default-shaders/VertexShader_Plain.hlsl"; sourceTree = "<group>"; };
+		D1E720A016D37D0600B9C9AD /* VertexShader_Textured.hlsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = VertexShader_Textured.hlsl; path = "rendersystems/DirectX/11/default-shaders/VertexShader_Textured.hlsl"; sourceTree = "<group>"; };
+		D1E720A316D37E3100B9C9AD /* OpenGL_State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGL_State.cpp; path = rendersystems/OpenGL/OpenGL_State.cpp; sourceTree = "<group>"; };
+		D1E720A416D37E3100B9C9AD /* OpenGL_State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGL_State.h; path = rendersystems/OpenGL/OpenGL_State.h; sourceTree = "<group>"; };
+		D1E720A916D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGL1_RenderSystem.cpp; path = rendersystems/OpenGL/1/OpenGL1_RenderSystem.cpp; sourceTree = "<group>"; };
+		D1E720AA16D37E3900B9C9AD /* OpenGL1_RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGL1_RenderSystem.h; path = rendersystems/OpenGL/1/OpenGL1_RenderSystem.h; sourceTree = "<group>"; };
+		D1E720AB16D37E3900B9C9AD /* OpenGL1_Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGL1_Texture.cpp; path = rendersystems/OpenGL/1/OpenGL1_Texture.cpp; sourceTree = "<group>"; };
+		D1E720AC16D37E3900B9C9AD /* OpenGL1_Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGL1_Texture.h; path = rendersystems/OpenGL/1/OpenGL1_Texture.h; sourceTree = "<group>"; };
+		D1E720B516D37E4200B9C9AD /* OpenGLES_RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLES_RenderSystem.cpp; path = rendersystems/OpenGL/ES/OpenGLES_RenderSystem.cpp; sourceTree = "<group>"; };
+		D1E720B616D37E4200B9C9AD /* OpenGLES_RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLES_RenderSystem.h; path = rendersystems/OpenGL/ES/OpenGLES_RenderSystem.h; sourceTree = "<group>"; };
+		D1E720B716D37E4200B9C9AD /* OpenGLES_Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLES_Texture.cpp; path = rendersystems/OpenGL/ES/OpenGLES_Texture.cpp; sourceTree = "<group>"; };
+		D1E720B816D37E4200B9C9AD /* OpenGLES_Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLES_Texture.h; path = rendersystems/OpenGL/ES/OpenGLES_Texture.h; sourceTree = "<group>"; };
+		D1E720C316D37E5800B9C9AD /* OpenGLES1_RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLES1_RenderSystem.cpp; path = rendersystems/OpenGL/ES/1/OpenGLES1_RenderSystem.cpp; sourceTree = "<group>"; };
+		D1E720C416D37E5800B9C9AD /* OpenGLES1_RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLES1_RenderSystem.h; path = rendersystems/OpenGL/ES/1/OpenGLES1_RenderSystem.h; sourceTree = "<group>"; };
+		D1E720C516D37E5800B9C9AD /* OpenGLES1_Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLES1_Texture.cpp; path = rendersystems/OpenGL/ES/1/OpenGLES1_Texture.cpp; sourceTree = "<group>"; };
+		D1E720C616D37E5800B9C9AD /* OpenGLES1_Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLES1_Texture.h; path = rendersystems/OpenGL/ES/1/OpenGLES1_Texture.h; sourceTree = "<group>"; };
+		D1E720C916D37E6100B9C9AD /* OpenGLES2_RenderSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLES2_RenderSystem.cpp; path = rendersystems/OpenGL/ES/2/OpenGLES2_RenderSystem.cpp; sourceTree = "<group>"; };
+		D1E720CA16D37E6100B9C9AD /* OpenGLES2_RenderSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLES2_RenderSystem.h; path = rendersystems/OpenGL/ES/2/OpenGLES2_RenderSystem.h; sourceTree = "<group>"; };
+		D1E720CB16D37E6100B9C9AD /* OpenGLES2_Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLES2_Texture.cpp; path = rendersystems/OpenGL/ES/2/OpenGLES2_Texture.cpp; sourceTree = "<group>"; };
+		D1E720CC16D37E6100B9C9AD /* OpenGLES2_Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLES2_Texture.h; path = rendersystems/OpenGL/ES/2/OpenGLES2_Texture.h; sourceTree = "<group>"; };
+		D1F27AEF177A2DF700E5C131 /* libapril-kd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libapril-kd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D197C5A415ED05F30017452F /* jpg.framework in Frameworks */,
+				D197C5A515ED05F30017452F /* png.framework in Frameworks */,
+				D197C5A615ED05F30017452F /* zip.framework in Frameworks */,
+				D197C5A715ED05F30017452F /* zlib.framework in Frameworks */,
+				D1CB6B6515CA905900B927BC /* Foundation.framework in Frameworks */,
+				C9313EB914FE64CE003BC7AB /* SDL.framework in Frameworks */,
+				7F42F83211EB1A9700B1C1DF /* gtypes.framework in Frameworks */,
+				7F42F83411EB1A9700B1C1DF /* hltypes.framework in Frameworks */,
+				7F42FACD11EB341E00B1C1DF /* OpenGL.framework in Frameworks */,
+				7F42FAD511EB342900B1C1DF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF66E2170B1E5900A43743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF66E3170B1E5900A43743 /* jpg.framework in Frameworks */,
+				D1AF66E4170B1E5900A43743 /* png.framework in Frameworks */,
+				D1AF66E5170B1E5900A43743 /* zip.framework in Frameworks */,
+				D1AF66E6170B1E5900A43743 /* zlib.framework in Frameworks */,
+				D1AF66E7170B1E5900A43743 /* Foundation.framework in Frameworks */,
+				D1AF66E9170B1E5900A43743 /* gtypes.framework in Frameworks */,
+				D1AF66EA170B1E5900A43743 /* hltypes.framework in Frameworks */,
+				D1AF66EB170B1E5900A43743 /* OpenGL.framework in Frameworks */,
+				D1AF66EC170B1E5900A43743 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* april.framework */,
+				D1981C30140F824B0057C3AF /* libapril.a */,
+				D1AF66F3170B1E5900A43743 /* april.framework */,
+				D1134F17175CDA3300BFF3A2 /* libapril-kd.a */,
+				D1F27AEF177A2DF700E5C131 /* libapril-kd.a */,
+				D1534776178AD62A00151D1A /* libapril.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* libapril */ = {
+			isa = PBXGroup;
+			children = (
+				D1681B9518D7673D0088FC68 /* config */,
+				C9E60986150518D500EB077F /* Platforms */,
+				7FA3ED1111F9813E001D1DDD /* Window Systems */,
+				7F42F7AE11EB185F00B1C1DF /* Render Systems */,
+				7F42F7A011EB177F00B1C1DF /* include */,
+				7F42F79F11EB177B00B1C1DF /* src */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = libapril;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Mac */,
+				1058C7B2FEA5585E11CA2CBB /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				D197C5A015ED05F20017452F /* jpg.framework */,
+				D197C5A115ED05F20017452F /* png.framework */,
+				D197C5A215ED05F20017452F /* zip.framework */,
+				D197C5A315ED05F20017452F /* zlib.framework */,
+				D1CB6B6415CA905900B927BC /* Foundation.framework */,
+				C9313EB814FE64CE003BC7AB /* SDL.framework */,
+				7F42FAD411EB342900B1C1DF /* Cocoa.framework */,
+				7F42FACC11EB341E00B1C1DF /* OpenGL.framework */,
+				7F42F83111EB1A9700B1C1DF /* gtypes.framework */,
+				7F42F83311EB1A9700B1C1DF /* hltypes.framework */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D1981C56140F84B60057C3AF /* CoreFoundation.framework */,
+				D1981C54140F84B00057C3AF /* Foundation.framework */,
+				D1981C52140F84AA0057C3AF /* CoreGraphics.framework */,
+				D1981C50140F84A10057C3AF /* UIKit.framework */,
+				D1981C4E140F849A0057C3AF /* OpenGLES.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7F42F79F11EB177B00B1C1DF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7204116D37BF900B9C9AD /* delegates */,
+				D1E7204216D37C0200B9C9AD /* images */,
+				D1E7204316D37C0B00B9C9AD /* timers */,
+				D136818C187BFB3E00E66E32 /* main_base.cpp */,
+				D136818D187BFB3E00E66E32 /* RenderState.cpp */,
+				D14BF96915875F3300D31573 /* aprilUtil.cpp */,
+				D14BF818158737A000D31573 /* Platform.cpp */,
+				D14BF819158737A000D31573 /* RamTexture.cpp */,
+				C9E6097C150518B400EB077F /* april.cpp */,
+				C9C04F8A14BB106F005BD333 /* PixelShader.cpp */,
+				C9C04F9214BB109B005BD333 /* VertexShader.cpp */,
+				7F1B522E12E4713600E958D8 /* Color.cpp */,
+				7F1B522F12E4713600E958D8 /* Texture.cpp */,
+				7F42F7AA11EB179A00B1C1DF /* RenderSystem.cpp */,
+				7FA3ED2611F98BAE001D1DDD /* Window.cpp */,
+				D1134F21175CDAD200BFF3A2 /* egl.cpp */,
+				D1134F22175CDAD200BFF3A2 /* egl.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		7F42F7A011EB177F00B1C1DF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D1049F6316D39E870058C514 /* delegates */,
+				D136819A187BFB6600E66E32 /* Android_main.h */,
+				D136819B187BFB6600E66E32 /* androidUtilJNI.h */,
+				D136819C187BFB6600E66E32 /* ControllerDelegate.h */,
+				D136819D187BFB6600E66E32 /* main_base.h */,
+				D136819E187BFB6600E66E32 /* OpenKODE_main.h */,
+				D136819F187BFB6600E66E32 /* RenderState.h */,
+				D13681A0187BFB6600E66E32 /* Standard_main.h */,
+				D13681A1187BFB6600E66E32 /* Win32_main.h */,
+				D13681A2187BFB6600E66E32 /* WinRT_main.h */,
+				D14BF81E158737B300D31573 /* aprilUtil.h */,
+				D14BF81F158737B300D31573 /* RamTexture.h */,
+				C9E6098D1505191800EB077F /* april.h */,
+				C9E6098E1505191800EB077F /* Platform.h */,
+				C9C04F8E14BB1091005BD333 /* PixelShader.h */,
+				C9C04F8F14BB1091005BD333 /* VertexShader.h */,
+				7F1B522712E4710D00E958D8 /* aprilExport.h */,
+				7F1B522812E4710D00E958D8 /* Color.h */,
+				7F1B522912E4710D00E958D8 /* Texture.h */,
+				7FC8FA28122FA58F0092964C /* Timer.h */,
+				7F4D0FE911FEE6C500F2F9F5 /* main.h */,
+				7F42F7A311EB178C00B1C1DF /* Keys.h */,
+				7F42F7A411EB178C00B1C1DF /* RenderSystem.h */,
+				7FA3ED1711F9817A001D1DDD /* Window.h */,
+				D1E7203216D37B2700B9C9AD /* Image.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		7F42F7AE11EB185F00B1C1DF /* Render Systems */ = {
+			isa = PBXGroup;
+			children = (
+				D1C2083C15FDC63500AB5DCA /* OpenGL */,
+				D1C2083E15FDC63E00AB5DCA /* DirectX */,
+			);
+			name = "Render Systems";
+			sourceTree = "<group>";
+		};
+		7FA3ED1111F9813E001D1DDD /* Window Systems */ = {
+			isa = PBXGroup;
+			children = (
+				D1BCC57C1615A27A0049CEA9 /* AndroidJNI */,
+				D1981C58140F85050057C3AF /* iOS */,
+				D1AF669A170B1E3700A43743 /* Mac */,
+				7FA3ED1211F98145001D1DDD /* SDL */,
+				D1BCC57B1615A2660049CEA9 /* Win32 */,
+				D1E7207716D37C9500B9C9AD /* WinRT */,
+				D1134F18175CDA4100BFF3A2 /* OpenKODE */,
+			);
+			name = "Window Systems";
+			sourceTree = "<group>";
+		};
+		7FA3ED1211F98145001D1DDD /* SDL */ = {
+			isa = PBXGroup;
+			children = (
+				D14BF80915872B2600D31573 /* SDL_Window.cpp */,
+				D14BF80A15872B2600D31573 /* SDL_Window.h */,
+			);
+			name = SDL;
+			sourceTree = "<group>";
+		};
+		C9E60986150518D500EB077F /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				D1BCC5851615A2BD0049CEA9 /* Android */,
+				C9E60988150518E200EB077F /* iOS */,
+				C9E60987150518DC00EB077F /* Mac */,
+				D1BCC5861615A2DD0049CEA9 /* Win32 */,
+				D1134F1C175CDABB00BFF3A2 /* OpenKODE */,
+			);
+			name = Platforms;
+			sourceTree = "<group>";
+		};
+		C9E60987150518DC00EB077F /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				D14BF81415872B4900D31573 /* Mac_main.mm */,
+				D14BF81515872B4900D31573 /* Mac_Platform.mm */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		C9E60988150518E200EB077F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D14BF81015872B4000D31573 /* iOS_main.mm */,
+				D1397A99175F834800DC02D7 /* iOS_devices.mm */,
+				D14BF81115872B4000D31573 /* iOS_Platform.mm */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D1049F6316D39E870058C514 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7203116D37B2700B9C9AD /* EventDelegate.h */,
+				D1E7203316D37B2700B9C9AD /* InputDelegate.h */,
+				D1E7203416D37B2700B9C9AD /* KeyboardDelegate.h */,
+				D1E7203516D37B2700B9C9AD /* MouseDelegate.h */,
+				D1E7203616D37B2700B9C9AD /* SystemDelegate.h */,
+				D1E7203716D37B2700B9C9AD /* TouchDelegate.h */,
+				D1E7203816D37B2700B9C9AD /* UpdateDelegate.h */,
+			);
+			name = delegates;
+			sourceTree = "<group>";
+		};
+		D1134F18175CDA4100BFF3A2 /* OpenKODE */ = {
+			isa = PBXGroup;
+			children = (
+				D1134F19175CDA8D00BFF3A2 /* OpenKODE_Window.cpp */,
+				D1134F1A175CDA8D00BFF3A2 /* OpenKODE_Window.h */,
+				D1397A45175F32CE00DC02D7 /* OpenKODE_Keys.h */,
+				D1397A44175F32CE00DC02D7 /* OpenKODE_Keys.cpp */,
+			);
+			name = OpenKODE;
+			sourceTree = "<group>";
+		};
+		D1134F1C175CDABB00BFF3A2 /* OpenKODE */ = {
+			isa = PBXGroup;
+			children = (
+				D1134F1D175CDAC600BFF3A2 /* OpenKODE_main.cpp */,
+				D1134F1E175CDAC600BFF3A2 /* OpenKODE_Platform.cpp */,
+			);
+			name = OpenKODE;
+			sourceTree = "<group>";
+		};
+		D1681B9518D7673D0088FC68 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				D1681BA618D768400088FC68 /* iOS.xcconfig */,
+				D1681BA718D768400088FC68 /* Mac.xcconfig */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		D1981C58140F85050057C3AF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D1981C59140F85350057C3AF /* ApriliOSAppDelegate.h */,
+				D1981C5A140F85350057C3AF /* ApriliOSAppDelegate.mm */,
+				D1981C5B140F85350057C3AF /* AprilViewController.h */,
+				D1981C5C140F85350057C3AF /* AprilViewController.m */,
+				D1981C5D140F85350057C3AF /* EAGLView.h */,
+				D1981C5E140F85350057C3AF /* EAGLView.mm */,
+				D14BF80D15872B3700D31573 /* iOS_Window.h */,
+				D14BF80E15872B3700D31573 /* iOS_Window.mm */,
+				D1981C61140F85350057C3AF /* PVRTexture.h */,
+				D1981C62140F85350057C3AF /* PVRTexture.mm */,
+				D1981C63140F85350057C3AF /* WBImage.h */,
+				D1981C64140F85350057C3AF /* WBImage.m */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D1AF669A170B1E3700A43743 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				D1256A2C1727F6C60089C583 /* Mac_AppDelegate.h */,
+				D1256A2D1727F6C60089C583 /* Mac_AppDelegate.mm */,
+				D1962A83170EC6FC0072A146 /* Mac_OpenGLView.h */,
+				D1962A84170EC6FC0072A146 /* Mac_OpenGLView.mm */,
+				D11A21641712D01500BA9DA8 /* Mac_Keys.h */,
+				D11A21621712CF9A00BA9DA8 /* Mac_Keys.mm */,
+				D1962A87170EC7A20072A146 /* Mac_CocoaWindow.h */,
+				D1962A88170EC7A20072A146 /* Mac_CocoaWindow.mm */,
+				D1962A8B170ECC400072A146 /* Mac_LoadingOverlay.h */,
+				D1962A8C170ECC400072A146 /* Mac_LoadingOverlay.mm */,
+				D1AF669B170B1E4800A43743 /* Mac_Window.h */,
+				D1AF669C170B1E4800A43743 /* Mac_Window.mm */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		D1BCC57B1615A2660049CEA9 /* Win32 */ = {
+			isa = PBXGroup;
+			children = (
+				D1BCC5791615A2620049CEA9 /* Win32_Window.cpp */,
+				D1BCC57A1615A2620049CEA9 /* Win32_Window.h */,
+			);
+			name = Win32;
+			sourceTree = "<group>";
+		};
+		D1BCC57C1615A27A0049CEA9 /* AndroidJNI */ = {
+			isa = PBXGroup;
+			children = (
+				D1BCC57D1615A2900049CEA9 /* AndroidJNI_Window.cpp */,
+				D1BCC57E1615A2900049CEA9 /* AndroidJNI_Window.h */,
+				D1397A9C175F85E200DC02D7 /* AndroidJNI_Keys.cpp */,
+				D1397A9D175F85E200DC02D7 /* AndroidJNI_Keys.h */,
+			);
+			name = AndroidJNI;
+			sourceTree = "<group>";
+		};
+		D1BCC5851615A2BD0049CEA9 /* Android */ = {
+			isa = PBXGroup;
+			children = (
+				D1BCC57F1615A2B20049CEA9 /* Android_main.cpp */,
+				D1BCC5801615A2B20049CEA9 /* Android_Platform.cpp */,
+				D1CC873C177D9FE500E47EBF /* AndroidJNI_Platform.cpp */,
+			);
+			name = Android;
+			sourceTree = "<group>";
+		};
+		D1BCC5861615A2DD0049CEA9 /* Win32 */ = {
+			isa = PBXGroup;
+			children = (
+				D1BCC5831615A2B20049CEA9 /* Win32_main.cpp */,
+				D1BCC5841615A2B20049CEA9 /* Win32_Platform.cpp */,
+			);
+			name = Win32;
+			sourceTree = "<group>";
+		};
+		D1C2083C15FDC63500AB5DCA /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				D1E720A116D37E2000B9C9AD /* 1 */,
+				D1E720A216D37E2300B9C9AD /* ES */,
+				7F1B520C12E470B200E958D8 /* OpenGL_RenderSystem.cpp */,
+				7F1B520D12E470B200E958D8 /* OpenGL_RenderSystem.h */,
+				D1E720A316D37E3100B9C9AD /* OpenGL_State.cpp */,
+				D1E720A416D37E3100B9C9AD /* OpenGL_State.h */,
+				7F1B520E12E470B200E958D8 /* OpenGL_Texture.cpp */,
+				7F1B520F12E470B200E958D8 /* OpenGL_Texture.h */,
+			);
+			name = OpenGL;
+			sourceTree = "<group>";
+		};
+		D1C2083E15FDC63E00AB5DCA /* DirectX */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7208216D37CCF00B9C9AD /* 9 */,
+				D1E7208316D37CD400B9C9AD /* 11 */,
+				D1E7208C16D37CEF00B9C9AD /* DirectX_RenderSystem.cpp */,
+				D1E7208D16D37CEF00B9C9AD /* DirectX_RenderSystem.h */,
+				D1E7208E16D37CEF00B9C9AD /* DirectX_Texture.cpp */,
+				D1E7208F16D37CEF00B9C9AD /* DirectX_Texture.h */,
+			);
+			name = DirectX;
+			sourceTree = "<group>";
+		};
+		D1E7204116D37BF900B9C9AD /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D16AB63D16F1F8E000E971B0 /* ControllerDelegate.cpp */,
+				D1E7204416D37C2300B9C9AD /* EventDelegate.cpp */,
+				D1E7204516D37C2300B9C9AD /* InputDelegate.cpp */,
+				D1E7204616D37C2300B9C9AD /* KeyboardDelegate.cpp */,
+				D1E7204716D37C2300B9C9AD /* MouseDelegate.cpp */,
+				D1E7204816D37C2300B9C9AD /* SystemDelegate.cpp */,
+				D1E7204916D37C2300B9C9AD /* TouchDelegate.cpp */,
+				D1E7204A16D37C2300B9C9AD /* UpdateDelegate.cpp */,
+			);
+			name = delegates;
+			sourceTree = "<group>";
+		};
+		D1E7204216D37C0200B9C9AD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7206016D37C5600B9C9AD /* Image.cpp */,
+				D1E7206116D37C5600B9C9AD /* ImageJpg.cpp */,
+				D1E7206216D37C5600B9C9AD /* ImageJpt.cpp */,
+				D1E7206316D37C5600B9C9AD /* ImagePng.cpp */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		D1E7204316D37C0B00B9C9AD /* timers */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7207316D37C7000B9C9AD /* TimerPosix.cpp */,
+				D1E7207116D37C6A00B9C9AD /* TimerSDL.cpp */,
+				D1E7207616D37C7800B9C9AD /* TimerWin.cpp */,
+			);
+			name = timers;
+			sourceTree = "<group>";
+		};
+		D1E7207716D37C9500B9C9AD /* WinRT */ = {
+			isa = PBXGroup;
+			children = (
+				D12EA4BF185B28400082CC20 /* IWinRT.h */,
+				D12EA4C0185B28400082CC20 /* pch.h */,
+				D12EA4C1185B28400082CC20 /* WinP8_App.cpp */,
+				D12EA4C2185B28400082CC20 /* WinP8_App.h */,
+				D12EA4C3185B28400082CC20 /* WinP8_AppLauncher.cpp */,
+				D12EA4C4185B28400082CC20 /* WinP8_AppLauncher.h */,
+				D12EA4C5185B28400082CC20 /* WinP8_KeyboardInterface.cpp */,
+				D12EA4C6185B28400082CC20 /* WinP8_KeyboardInterface.h */,
+				D12EA4C7185B28400082CC20 /* WinRT_BaseApp.cpp */,
+				D12EA4C8185B28400082CC20 /* WinRT_BaseApp.h */,
+				D12EA4C9185B28400082CC20 /* WinRT_XamlApp.cpp */,
+				D12EA4CA185B28400082CC20 /* WinRT_XamlApp.h */,
+				D12EA4CB185B28400082CC20 /* WinRT_XamlOverlay.xaml */,
+				D12EA4CC185B28400082CC20 /* WinRT_XamlOverlay.xaml.cpp */,
+				D12EA4CD185B28400082CC20 /* WinRT_XamlOverlay.xaml.h */,
+				D12EA4CE185B28400082CC20 /* WinRT.cpp */,
+				D12EA4CF185B28400082CC20 /* WinRT.h */,
+				D1E7207C16D37CAB00B9C9AD /* WinRT_Window.cpp */,
+				D1E7207D16D37CAB00B9C9AD /* WinRT_Window.h */,
+			);
+			name = WinRT;
+			sourceTree = "<group>";
+		};
+		D1E7208216D37CCF00B9C9AD /* 9 */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7208416D37CE300B9C9AD /* DirectX9_PixelShader.cpp */,
+				D1E7208516D37CE300B9C9AD /* DirectX9_PixelShader.h */,
+				D1E7208616D37CE300B9C9AD /* DirectX9_RenderSystem.cpp */,
+				D1E7208716D37CE300B9C9AD /* DirectX9_RenderSystem.h */,
+				D1E7208816D37CE300B9C9AD /* DirectX9_Texture.cpp */,
+				D1E7208916D37CE300B9C9AD /* DirectX9_Texture.h */,
+				D1E7208A16D37CE300B9C9AD /* DirectX9_VertexShader.cpp */,
+				D1E7208B16D37CE300B9C9AD /* DirectX9_VertexShader.h */,
+			);
+			name = 9;
+			sourceTree = "<group>";
+		};
+		D1E7208316D37CD400B9C9AD /* 11 */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7209816D37CFC00B9C9AD /* default-shaders */,
+				D1E7209016D37CF700B9C9AD /* DirectX11_PixelShader.cpp */,
+				D1E7209116D37CF700B9C9AD /* DirectX11_PixelShader.h */,
+				D1E7209216D37CF700B9C9AD /* DirectX11_RenderSystem.cpp */,
+				D1E7209316D37CF700B9C9AD /* DirectX11_RenderSystem.h */,
+				D1E7209416D37CF700B9C9AD /* DirectX11_Texture.cpp */,
+				D1E7209516D37CF700B9C9AD /* DirectX11_Texture.h */,
+				D1E7209616D37CF700B9C9AD /* DirectX11_VertexShader.cpp */,
+				D1E7209716D37CF700B9C9AD /* DirectX11_VertexShader.h */,
+			);
+			name = 11;
+			sourceTree = "<group>";
+		};
+		D1E7209816D37CFC00B9C9AD /* default-shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D1E7209916D37D0600B9C9AD /* PixelShader_Colored.hlsl */,
+				D1E7209A16D37D0600B9C9AD /* PixelShader_ColoredTextured.hlsl */,
+				D1E7209B16D37D0600B9C9AD /* PixelShader_Plain.hlsl */,
+				D1E7209C16D37D0600B9C9AD /* PixelShader_Textured.hlsl */,
+				D1E7209D16D37D0600B9C9AD /* VertexShader_Colored.hlsl */,
+				D1E7209E16D37D0600B9C9AD /* VertexShader_ColoredTextured.hlsl */,
+				D1E7209F16D37D0600B9C9AD /* VertexShader_Plain.hlsl */,
+				D1E720A016D37D0600B9C9AD /* VertexShader_Textured.hlsl */,
+			);
+			name = "default-shaders";
+			sourceTree = "<group>";
+		};
+		D1E720A116D37E2000B9C9AD /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				D1E720A916D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp */,
+				D1E720AA16D37E3900B9C9AD /* OpenGL1_RenderSystem.h */,
+				D1E720AB16D37E3900B9C9AD /* OpenGL1_Texture.cpp */,
+				D1E720AC16D37E3900B9C9AD /* OpenGL1_Texture.h */,
+			);
+			name = 1;
+			sourceTree = "<group>";
+		};
+		D1E720A216D37E2300B9C9AD /* ES */ = {
+			isa = PBXGroup;
+			children = (
+				D1E720C116D37E4900B9C9AD /* 1 */,
+				D1E720C216D37E4C00B9C9AD /* 2 */,
+				D1E720B516D37E4200B9C9AD /* OpenGLES_RenderSystem.cpp */,
+				D1E720B616D37E4200B9C9AD /* OpenGLES_RenderSystem.h */,
+				D1E720B716D37E4200B9C9AD /* OpenGLES_Texture.cpp */,
+				D1E720B816D37E4200B9C9AD /* OpenGLES_Texture.h */,
+			);
+			name = ES;
+			sourceTree = "<group>";
+		};
+		D1E720C116D37E4900B9C9AD /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				D1E720C316D37E5800B9C9AD /* OpenGLES1_RenderSystem.cpp */,
+				D1E720C416D37E5800B9C9AD /* OpenGLES1_RenderSystem.h */,
+				D1E720C516D37E5800B9C9AD /* OpenGLES1_Texture.cpp */,
+				D1E720C616D37E5800B9C9AD /* OpenGLES1_Texture.h */,
+			);
+			name = 1;
+			sourceTree = "<group>";
+		};
+		D1E720C216D37E4C00B9C9AD /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				D1E720C916D37E6100B9C9AD /* OpenGLES2_RenderSystem.cpp */,
+				D1E720CA16D37E6100B9C9AD /* OpenGLES2_RenderSystem.h */,
+				D1E720CB16D37E6100B9C9AD /* OpenGLES2_Texture.cpp */,
+				D1E720CC16D37E6100B9C9AD /* OpenGLES2_Texture.h */,
+			);
+			name = 2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E6098F1505191800EB077F /* april.h in Headers */,
+				C9E609901505191800EB077F /* Platform.h in Headers */,
+				7F42F7A711EB178C00B1C1DF /* Keys.h in Headers */,
+				7F42F7A811EB178C00B1C1DF /* RenderSystem.h in Headers */,
+				7FA3ED1811F9817A001D1DDD /* Window.h in Headers */,
+				7F4D0FEA11FEE6C500F2F9F5 /* main.h in Headers */,
+				7FC8FA29122FA58F0092964C /* Timer.h in Headers */,
+				C9C04F9014BB1091005BD333 /* PixelShader.h in Headers */,
+				C9C04F9114BB1091005BD333 /* VertexShader.h in Headers */,
+				7F1B522A12E4710D00E958D8 /* aprilExport.h in Headers */,
+				D14BF820158737B300D31573 /* aprilUtil.h in Headers */,
+				D14BF821158737B300D31573 /* RamTexture.h in Headers */,
+				D1E7203916D37B2700B9C9AD /* EventDelegate.h in Headers */,
+				D1E7203A16D37B2700B9C9AD /* Image.h in Headers */,
+				D1E7203B16D37B2700B9C9AD /* InputDelegate.h in Headers */,
+				D1E7203C16D37B2700B9C9AD /* KeyboardDelegate.h in Headers */,
+				D1E7203D16D37B2700B9C9AD /* MouseDelegate.h in Headers */,
+				D1E7203E16D37B2700B9C9AD /* SystemDelegate.h in Headers */,
+				D13681B0187BFB6600E66E32 /* Standard_main.h in Headers */,
+				D13681AA187BFB6600E66E32 /* main_base.h in Headers */,
+				D13681A8187BFB6600E66E32 /* ControllerDelegate.h in Headers */,
+				D13681AE187BFB6600E66E32 /* RenderState.h in Headers */,
+				D1E7203F16D37B2700B9C9AD /* TouchDelegate.h in Headers */,
+				D1E7204016D37B2700B9C9AD /* UpdateDelegate.h in Headers */,
+				7F1B522B12E4710D00E958D8 /* Color.h in Headers */,
+				7F1B522C12E4710D00E958D8 /* Texture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF66BE170B1E5900A43743 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF66BF170B1E5900A43743 /* april.h in Headers */,
+				D1AF66C0170B1E5900A43743 /* Platform.h in Headers */,
+				D1AF66C1170B1E5900A43743 /* Keys.h in Headers */,
+				D1AF66C2170B1E5900A43743 /* RenderSystem.h in Headers */,
+				D1AF66C3170B1E5900A43743 /* Window.h in Headers */,
+				D1AF66C4170B1E5900A43743 /* main.h in Headers */,
+				D1AF66C5170B1E5900A43743 /* Timer.h in Headers */,
+				D1AF66C7170B1E5900A43743 /* PixelShader.h in Headers */,
+				D1AF66C8170B1E5900A43743 /* VertexShader.h in Headers */,
+				D1AF66CA170B1E5900A43743 /* aprilExport.h in Headers */,
+				D1AF66CB170B1E5900A43743 /* aprilUtil.h in Headers */,
+				D1AF66CC170B1E5900A43743 /* RamTexture.h in Headers */,
+				D1AF66CD170B1E5900A43743 /* EventDelegate.h in Headers */,
+				D1AF66CE170B1E5900A43743 /* Image.h in Headers */,
+				D1AF66CF170B1E5900A43743 /* InputDelegate.h in Headers */,
+				D1AF66D0170B1E5900A43743 /* KeyboardDelegate.h in Headers */,
+				D1256A2E1727F6C60089C583 /* Mac_AppDelegate.h in Headers */,
+				D1AF66D1170B1E5900A43743 /* MouseDelegate.h in Headers */,
+				D1AF66D2170B1E5900A43743 /* SystemDelegate.h in Headers */,
+				D1AF66D3170B1E5900A43743 /* TouchDelegate.h in Headers */,
+				D13681AF187BFB6600E66E32 /* Standard_main.h in Headers */,
+				D13681A7187BFB6600E66E32 /* ControllerDelegate.h in Headers */,
+				D13681AD187BFB6600E66E32 /* RenderState.h in Headers */,
+				D13681A9187BFB6600E66E32 /* main_base.h in Headers */,
+				D1AF66D4170B1E5900A43743 /* UpdateDelegate.h in Headers */,
+				D1AF66D5170B1E5900A43743 /* Color.h in Headers */,
+				D1AF66D6170B1E5900A43743 /* Texture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* april (SDL OpenGL) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "april (SDL OpenGL)" */;
+			buildPhases = (
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "april (SDL OpenGL)";
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = libapril;
+			productReference = 8DC2EF5B0486A6940098B216 /* april.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1134EE6175CDA3300BFF3A2 /* april (iOS OpenKODE) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1134F11175CDA3300BFF3A2 /* Build configuration list for PBXNativeTarget "april (iOS OpenKODE)" */;
+			buildPhases = (
+				D1134EE7175CDA3300BFF3A2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "april (iOS OpenKODE)";
+			productName = "libapril-ios";
+			productReference = D1134F17175CDA3300BFF3A2 /* libapril-kd.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D153474D178AD62A00151D1A /* april (Mac Cocoa OpenGL) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1534770178AD62A00151D1A /* Build configuration list for PBXNativeTarget "april (Mac Cocoa OpenGL)" */;
+			buildPhases = (
+				D153474E178AD62A00151D1A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "april (Mac Cocoa OpenGL)";
+			productName = "libapril-ios";
+			productReference = D1534776178AD62A00151D1A /* libapril.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D1981C2F140F824B0057C3AF /* april (iOS OpenGLES1) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1981C3F140F824B0057C3AF /* Build configuration list for PBXNativeTarget "april (iOS OpenGLES1)" */;
+			buildPhases = (
+				D1981C2C140F824B0057C3AF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "april (iOS OpenGLES1)";
+			productName = "libapril-ios";
+			productReference = D1981C30140F824B0057C3AF /* libapril.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D1AF669D170B1E5900A43743 /* april (Cocoa OpenGL) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1AF66ED170B1E5900A43743 /* Build configuration list for PBXNativeTarget "april (Cocoa OpenGL)" */;
+			buildPhases = (
+				D1AF669E170B1E5900A43743 /* Sources */,
+				D1AF66BE170B1E5900A43743 /* Headers */,
+				D1AF66E2170B1E5900A43743 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "april (Cocoa OpenGL)";
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = libapril;
+			productReference = D1AF66F3170B1E5900A43743 /* april.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1F27AC0177A2DF700E5C131 /* april (Mac OpenKODE) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F27AE9177A2DF700E5C131 /* Build configuration list for PBXNativeTarget "april (Mac OpenKODE)" */;
+			buildPhases = (
+				D1F27AC1177A2DF700E5C131 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "april (Mac OpenKODE)";
+			productName = "libapril-ios";
+			productReference = D1F27AEF177A2DF700E5C131 /* libapril-kd.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "april" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* libapril */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1AF669D170B1E5900A43743 /* april (Cocoa OpenGL) */,
+				8DC2EF4F0486A6940098B216 /* april (SDL OpenGL) */,
+				D153474D178AD62A00151D1A /* april (Mac Cocoa OpenGL) */,
+				D1F27AC0177A2DF700E5C131 /* april (Mac OpenKODE) */,
+				D1981C2F140F824B0057C3AF /* april (iOS OpenGLES1) */,
+				D1134EE6175CDA3300BFF3A2 /* april (iOS OpenKODE) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42F7AC11EB179A00B1C1DF /* RenderSystem.cpp in Sources */,
+				7FA3ED2711F98BAE001D1DDD /* Window.cpp in Sources */,
+				7F1B521012E470B200E958D8 /* OpenGL_RenderSystem.cpp in Sources */,
+				7F1B521212E470B200E958D8 /* OpenGL_Texture.cpp in Sources */,
+				7F1B523012E4713600E958D8 /* Color.cpp in Sources */,
+				7F1B523112E4713600E958D8 /* Texture.cpp in Sources */,
+				C9C04F8B14BB106F005BD333 /* PixelShader.cpp in Sources */,
+				C9C04F9314BB109B005BD333 /* VertexShader.cpp in Sources */,
+				C9E6097D150518B400EB077F /* april.cpp in Sources */,
+				D14BF80B15872B2600D31573 /* SDL_Window.cpp in Sources */,
+				D14BF81615872B4900D31573 /* Mac_main.mm in Sources */,
+				D14BF81715872B4900D31573 /* Mac_Platform.mm in Sources */,
+				D14BF81A158737A000D31573 /* Platform.cpp in Sources */,
+				D14BF81C158737A000D31573 /* RamTexture.cpp in Sources */,
+				D14BF96A15875F3300D31573 /* aprilUtil.cpp in Sources */,
+				D1E7204B16D37C2300B9C9AD /* EventDelegate.cpp in Sources */,
+				D1E7204E16D37C2300B9C9AD /* InputDelegate.cpp in Sources */,
+				D1E7205116D37C2300B9C9AD /* KeyboardDelegate.cpp in Sources */,
+				D1E7205416D37C2300B9C9AD /* MouseDelegate.cpp in Sources */,
+				D1E7205716D37C2300B9C9AD /* SystemDelegate.cpp in Sources */,
+				D1E7205A16D37C2300B9C9AD /* TouchDelegate.cpp in Sources */,
+				D1E7205D16D37C2300B9C9AD /* UpdateDelegate.cpp in Sources */,
+				D1E7206416D37C5600B9C9AD /* Image.cpp in Sources */,
+				D1E7206716D37C5600B9C9AD /* ImageJpg.cpp in Sources */,
+				D1E7206A16D37C5600B9C9AD /* ImageJpt.cpp in Sources */,
+				D1E7206D16D37C5600B9C9AD /* ImagePng.cpp in Sources */,
+				D1E7207216D37C6A00B9C9AD /* TimerSDL.cpp in Sources */,
+				D1E720A516D37E3100B9C9AD /* OpenGL_State.cpp in Sources */,
+				D1E720AD16D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp in Sources */,
+				D136818F187BFB3E00E66E32 /* main_base.cpp in Sources */,
+				D1368195187BFB3E00E66E32 /* RenderState.cpp in Sources */,
+				D1E720B116D37E3900B9C9AD /* OpenGL1_Texture.cpp in Sources */,
+				D16AB63E16F1F8E000E971B0 /* ControllerDelegate.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1134EE7175CDA3300BFF3A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1134EED175CDA3300BFF3A2 /* OpenGL_RenderSystem.cpp in Sources */,
+				D1134EEE175CDA3300BFF3A2 /* OpenGL_Texture.cpp in Sources */,
+				D1134EEF175CDA3300BFF3A2 /* Color.cpp in Sources */,
+				D1134EF0175CDA3300BFF3A2 /* Texture.cpp in Sources */,
+				D1134EF1175CDA3300BFF3A2 /* RenderSystem.cpp in Sources */,
+				D1134EF2175CDA3300BFF3A2 /* Window.cpp in Sources */,
+				D1134EF3175CDA3300BFF3A2 /* PixelShader.cpp in Sources */,
+				D1134EF4175CDA3300BFF3A2 /* VertexShader.cpp in Sources */,
+				D1134EF5175CDA3300BFF3A2 /* april.cpp in Sources */,
+				D1134EF9175CDA3300BFF3A2 /* Platform.cpp in Sources */,
+				D1134EFA175CDA3300BFF3A2 /* RamTexture.cpp in Sources */,
+				D1134EFB175CDA3300BFF3A2 /* aprilUtil.cpp in Sources */,
+				D1134EFC175CDA3300BFF3A2 /* EventDelegate.cpp in Sources */,
+				D1134EFD175CDA3300BFF3A2 /* InputDelegate.cpp in Sources */,
+				D1134EFE175CDA3300BFF3A2 /* KeyboardDelegate.cpp in Sources */,
+				D1134EFF175CDA3300BFF3A2 /* MouseDelegate.cpp in Sources */,
+				D1134F00175CDA3300BFF3A2 /* SystemDelegate.cpp in Sources */,
+				D1134F01175CDA3300BFF3A2 /* TouchDelegate.cpp in Sources */,
+				D1134F02175CDA3300BFF3A2 /* UpdateDelegate.cpp in Sources */,
+				D1134F03175CDA3300BFF3A2 /* Image.cpp in Sources */,
+				D1134F04175CDA3300BFF3A2 /* ImageJpg.cpp in Sources */,
+				D1134F05175CDA3300BFF3A2 /* ImageJpt.cpp in Sources */,
+				D1134F06175CDA3300BFF3A2 /* ImagePng.cpp in Sources */,
+				D1134F07175CDA3300BFF3A2 /* TimerPosix.cpp in Sources */,
+				D1134F08175CDA3300BFF3A2 /* OpenGL_State.cpp in Sources */,
+				D1134F09175CDA3300BFF3A2 /* OpenGL1_RenderSystem.cpp in Sources */,
+				D1134F0A175CDA3300BFF3A2 /* OpenGL1_Texture.cpp in Sources */,
+				D1134F0B175CDA3300BFF3A2 /* OpenGLES_RenderSystem.cpp in Sources */,
+				D1368199187BFB3E00E66E32 /* RenderState.cpp in Sources */,
+				D1134F0C175CDA3300BFF3A2 /* OpenGLES_Texture.cpp in Sources */,
+				D1368193187BFB3E00E66E32 /* main_base.cpp in Sources */,
+				D1134F0D175CDA3300BFF3A2 /* OpenGLES1_RenderSystem.cpp in Sources */,
+				D1134F0E175CDA3300BFF3A2 /* OpenGLES1_Texture.cpp in Sources */,
+				D1134F10175CDA3300BFF3A2 /* ControllerDelegate.cpp in Sources */,
+				D1134F1B175CDA8D00BFF3A2 /* OpenKODE_Window.cpp in Sources */,
+				D1134F1F175CDAC600BFF3A2 /* OpenKODE_main.cpp in Sources */,
+				D1134F20175CDAC600BFF3A2 /* OpenKODE_Platform.cpp in Sources */,
+				D1134F23175CDAD200BFF3A2 /* egl.cpp in Sources */,
+				D1397A46175F32CE00DC02D7 /* OpenKODE_Keys.cpp in Sources */,
+				D1397A9B175F834800DC02D7 /* iOS_devices.mm in Sources */,
+				D137FF331760912300568F0E /* PVRTexture.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D153474E178AD62A00151D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D153474F178AD62A00151D1A /* OpenGL_RenderSystem.cpp in Sources */,
+				D1534750178AD62A00151D1A /* OpenGL_Texture.cpp in Sources */,
+				D1534751178AD62A00151D1A /* Color.cpp in Sources */,
+				D1534752178AD62A00151D1A /* Texture.cpp in Sources */,
+				D1534753178AD62A00151D1A /* RenderSystem.cpp in Sources */,
+				D1534754178AD62A00151D1A /* Window.cpp in Sources */,
+				D1534755178AD62A00151D1A /* PixelShader.cpp in Sources */,
+				D1368196187BFB3E00E66E32 /* RenderState.cpp in Sources */,
+				D1534756178AD62A00151D1A /* VertexShader.cpp in Sources */,
+				D1534757178AD62A00151D1A /* april.cpp in Sources */,
+				D1534758178AD62A00151D1A /* Platform.cpp in Sources */,
+				D1534759178AD62A00151D1A /* RamTexture.cpp in Sources */,
+				D153475A178AD62A00151D1A /* aprilUtil.cpp in Sources */,
+				D153475B178AD62A00151D1A /* EventDelegate.cpp in Sources */,
+				D153475C178AD62A00151D1A /* InputDelegate.cpp in Sources */,
+				D153475D178AD62A00151D1A /* KeyboardDelegate.cpp in Sources */,
+				D153475E178AD62A00151D1A /* MouseDelegate.cpp in Sources */,
+				D153475F178AD62A00151D1A /* SystemDelegate.cpp in Sources */,
+				D1368190187BFB3E00E66E32 /* main_base.cpp in Sources */,
+				D1534760178AD62A00151D1A /* TouchDelegate.cpp in Sources */,
+				D1534761178AD62A00151D1A /* UpdateDelegate.cpp in Sources */,
+				D1534762178AD62A00151D1A /* Image.cpp in Sources */,
+				D1534763178AD62A00151D1A /* ImageJpg.cpp in Sources */,
+				D1534764178AD62A00151D1A /* ImageJpt.cpp in Sources */,
+				D1534765178AD62A00151D1A /* ImagePng.cpp in Sources */,
+				D1534766178AD62A00151D1A /* TimerPosix.cpp in Sources */,
+				D1534767178AD62A00151D1A /* OpenGL_State.cpp in Sources */,
+				D1534768178AD62A00151D1A /* OpenGL1_RenderSystem.cpp in Sources */,
+				D1534769178AD62A00151D1A /* OpenGL1_Texture.cpp in Sources */,
+				D153476A178AD62A00151D1A /* ControllerDelegate.cpp in Sources */,
+				D1534777178AD65F00151D1A /* Mac_AppDelegate.mm in Sources */,
+				D1534778178AD65F00151D1A /* Mac_OpenGLView.mm in Sources */,
+				D1534779178AD65F00151D1A /* Mac_Keys.mm in Sources */,
+				D153477A178AD65F00151D1A /* Mac_CocoaWindow.mm in Sources */,
+				D153477B178AD65F00151D1A /* Mac_LoadingOverlay.mm in Sources */,
+				D153477C178AD65F00151D1A /* Mac_Window.mm in Sources */,
+				D153477D178AD66700151D1A /* Mac_main.mm in Sources */,
+				D153477E178AD66700151D1A /* Mac_Platform.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1981C2C140F824B0057C3AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1981C7A140F87060057C3AF /* AprilViewController.m in Sources */,
+				D1981C73140F858F0057C3AF /* ApriliOSAppDelegate.mm in Sources */,
+				D1981C75140F858F0057C3AF /* EAGLView.mm in Sources */,
+				D1981C77140F858F0057C3AF /* PVRTexture.mm in Sources */,
+				D1981C78140F858F0057C3AF /* WBImage.m in Sources */,
+				D1981C42140F82B00057C3AF /* OpenGL_RenderSystem.cpp in Sources */,
+				D1368198187BFB3E00E66E32 /* RenderState.cpp in Sources */,
+				D1981C43140F82B00057C3AF /* OpenGL_Texture.cpp in Sources */,
+				D1981C44140F82B00057C3AF /* Color.cpp in Sources */,
+				D1981C45140F82B00057C3AF /* Texture.cpp in Sources */,
+				D1981C49140F82B00057C3AF /* RenderSystem.cpp in Sources */,
+				D1981C4A140F82B00057C3AF /* Window.cpp in Sources */,
+				C9C04F8C14BB106F005BD333 /* PixelShader.cpp in Sources */,
+				C9C04F9414BB109B005BD333 /* VertexShader.cpp in Sources */,
+				C9E6097E150518B400EB077F /* april.cpp in Sources */,
+				D14BF80F15872B3700D31573 /* iOS_Window.mm in Sources */,
+				D14BF81215872B4000D31573 /* iOS_main.mm in Sources */,
+				D14BF81315872B4000D31573 /* iOS_Platform.mm in Sources */,
+				D14BF81B158737A000D31573 /* Platform.cpp in Sources */,
+				D14BF81D158737A000D31573 /* RamTexture.cpp in Sources */,
+				D14BF96B15875F3300D31573 /* aprilUtil.cpp in Sources */,
+				D1E7204C16D37C2300B9C9AD /* EventDelegate.cpp in Sources */,
+				D1E7204F16D37C2300B9C9AD /* InputDelegate.cpp in Sources */,
+				D1E7205216D37C2300B9C9AD /* KeyboardDelegate.cpp in Sources */,
+				D1E7205516D37C2300B9C9AD /* MouseDelegate.cpp in Sources */,
+				D1E7205816D37C2300B9C9AD /* SystemDelegate.cpp in Sources */,
+				D1E7205B16D37C2300B9C9AD /* TouchDelegate.cpp in Sources */,
+				D1E7205E16D37C2300B9C9AD /* UpdateDelegate.cpp in Sources */,
+				D1E7206516D37C5600B9C9AD /* Image.cpp in Sources */,
+				D1E7206816D37C5600B9C9AD /* ImageJpg.cpp in Sources */,
+				D1E7206B16D37C5600B9C9AD /* ImageJpt.cpp in Sources */,
+				D1E7206E16D37C5600B9C9AD /* ImagePng.cpp in Sources */,
+				D1E7207416D37C7000B9C9AD /* TimerPosix.cpp in Sources */,
+				D1E720A616D37E3100B9C9AD /* OpenGL_State.cpp in Sources */,
+				D1E720AE16D37E3900B9C9AD /* OpenGL1_RenderSystem.cpp in Sources */,
+				D1E720B216D37E3900B9C9AD /* OpenGL1_Texture.cpp in Sources */,
+				D1E720BA16D37E4200B9C9AD /* OpenGLES_RenderSystem.cpp in Sources */,
+				D1E720BE16D37E4200B9C9AD /* OpenGLES_Texture.cpp in Sources */,
+				D1368192187BFB3E00E66E32 /* main_base.cpp in Sources */,
+				D1E720C716D37E5800B9C9AD /* OpenGLES1_RenderSystem.cpp in Sources */,
+				D1E720C816D37E5800B9C9AD /* OpenGLES1_Texture.cpp in Sources */,
+				D16AB63F16F1F8E000E971B0 /* ControllerDelegate.cpp in Sources */,
+				D1397A9A175F834800DC02D7 /* iOS_devices.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF669E170B1E5900A43743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A6260F170B78FF009ABE7B /* TimerPosix.cpp in Sources */,
+				D1AF669F170B1E5900A43743 /* RenderSystem.cpp in Sources */,
+				D1AF66A0170B1E5900A43743 /* Window.cpp in Sources */,
+				D1AF66A1170B1E5900A43743 /* OpenGL_RenderSystem.cpp in Sources */,
+				D1AF66A2170B1E5900A43743 /* OpenGL_Texture.cpp in Sources */,
+				D1AF66A3170B1E5900A43743 /* Color.cpp in Sources */,
+				D1AF66A4170B1E5900A43743 /* Texture.cpp in Sources */,
+				D1368194187BFB3E00E66E32 /* RenderState.cpp in Sources */,
+				D1AF66A5170B1E5900A43743 /* PixelShader.cpp in Sources */,
+				D1AF66A6170B1E5900A43743 /* VertexShader.cpp in Sources */,
+				D1AF66A7170B1E5900A43743 /* april.cpp in Sources */,
+				D1AF66A9170B1E5900A43743 /* Mac_main.mm in Sources */,
+				D1AF66AA170B1E5900A43743 /* Mac_Platform.mm in Sources */,
+				D1AF66F6170B1E8800A43743 /* Mac_Window.mm in Sources */,
+				D1AF66AB170B1E5900A43743 /* Platform.cpp in Sources */,
+				D1AF66AC170B1E5900A43743 /* RamTexture.cpp in Sources */,
+				D1AF66AD170B1E5900A43743 /* aprilUtil.cpp in Sources */,
+				D1AF66AE170B1E5900A43743 /* EventDelegate.cpp in Sources */,
+				D136818E187BFB3E00E66E32 /* main_base.cpp in Sources */,
+				D1AF66AF170B1E5900A43743 /* InputDelegate.cpp in Sources */,
+				D1AF66B0170B1E5900A43743 /* KeyboardDelegate.cpp in Sources */,
+				D1AF66B1170B1E5900A43743 /* MouseDelegate.cpp in Sources */,
+				D1AF66B2170B1E5900A43743 /* SystemDelegate.cpp in Sources */,
+				D1AF66B3170B1E5900A43743 /* TouchDelegate.cpp in Sources */,
+				D1AF66B4170B1E5900A43743 /* UpdateDelegate.cpp in Sources */,
+				D1AF66B5170B1E5900A43743 /* Image.cpp in Sources */,
+				D1AF66B6170B1E5900A43743 /* ImageJpg.cpp in Sources */,
+				D1AF66B7170B1E5900A43743 /* ImageJpt.cpp in Sources */,
+				D1AF66B8170B1E5900A43743 /* ImagePng.cpp in Sources */,
+				D1AF66BA170B1E5900A43743 /* OpenGL_State.cpp in Sources */,
+				D1AF66BB170B1E5900A43743 /* OpenGL1_RenderSystem.cpp in Sources */,
+				D1AF66BC170B1E5900A43743 /* OpenGL1_Texture.cpp in Sources */,
+				D1AF66BD170B1E5900A43743 /* ControllerDelegate.cpp in Sources */,
+				D1962A86170EC6FC0072A146 /* Mac_OpenGLView.mm in Sources */,
+				D1962A8A170EC7A20072A146 /* Mac_CocoaWindow.mm in Sources */,
+				D1962A8E170ECC400072A146 /* Mac_LoadingOverlay.mm in Sources */,
+				D11A21631712CF9A00BA9DA8 /* Mac_Keys.mm in Sources */,
+				D1256A2F1727F6C60089C583 /* Mac_AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F27AC1177A2DF700E5C131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1F27AC2177A2DF700E5C131 /* OpenGL_RenderSystem.cpp in Sources */,
+				D1F27AC3177A2DF700E5C131 /* OpenGL_Texture.cpp in Sources */,
+				D1F27AC4177A2DF700E5C131 /* Color.cpp in Sources */,
+				D1F27AC5177A2DF700E5C131 /* Texture.cpp in Sources */,
+				D1F27AC6177A2DF700E5C131 /* RenderSystem.cpp in Sources */,
+				D1F27AC7177A2DF700E5C131 /* Window.cpp in Sources */,
+				D1F27AC8177A2DF700E5C131 /* PixelShader.cpp in Sources */,
+				D1368191187BFB3E00E66E32 /* main_base.cpp in Sources */,
+				D1F27AC9177A2DF700E5C131 /* VertexShader.cpp in Sources */,
+				D1F27ACA177A2DF700E5C131 /* april.cpp in Sources */,
+				D1F27ACB177A2DF700E5C131 /* Platform.cpp in Sources */,
+				D1F27ACC177A2DF700E5C131 /* RamTexture.cpp in Sources */,
+				D1F27ACD177A2DF700E5C131 /* aprilUtil.cpp in Sources */,
+				D1F27ACE177A2DF700E5C131 /* EventDelegate.cpp in Sources */,
+				D1F27ACF177A2DF700E5C131 /* InputDelegate.cpp in Sources */,
+				D1F27AD0177A2DF700E5C131 /* KeyboardDelegate.cpp in Sources */,
+				D1F27AD1177A2DF700E5C131 /* MouseDelegate.cpp in Sources */,
+				D1F27AD2177A2DF700E5C131 /* SystemDelegate.cpp in Sources */,
+				D1F27AD3177A2DF700E5C131 /* TouchDelegate.cpp in Sources */,
+				D1F27AD4177A2DF700E5C131 /* UpdateDelegate.cpp in Sources */,
+				D1368197187BFB3E00E66E32 /* RenderState.cpp in Sources */,
+				D1F27AD5177A2DF700E5C131 /* Image.cpp in Sources */,
+				D1F27AD6177A2DF700E5C131 /* ImageJpg.cpp in Sources */,
+				D1F27AD7177A2DF700E5C131 /* ImageJpt.cpp in Sources */,
+				D1F27AD8177A2DF700E5C131 /* ImagePng.cpp in Sources */,
+				D1F27AD9177A2DF700E5C131 /* TimerPosix.cpp in Sources */,
+				D1F27ADA177A2DF700E5C131 /* OpenGL_State.cpp in Sources */,
+				D1F27ADB177A2DF700E5C131 /* OpenGL1_RenderSystem.cpp in Sources */,
+				D1F27ADC177A2DF700E5C131 /* OpenGL1_Texture.cpp in Sources */,
+				D1F27AE1177A2DF700E5C131 /* ControllerDelegate.cpp in Sources */,
+				D1F27AE2177A2DF700E5C131 /* OpenKODE_Window.cpp in Sources */,
+				D1F27AE3177A2DF700E5C131 /* OpenKODE_main.cpp in Sources */,
+				D1F27AE4177A2DF700E5C131 /* OpenKODE_Platform.cpp in Sources */,
+				D1F27AE5177A2DF700E5C131 /* egl.cpp in Sources */,
+				D1F27AE6177A2DF700E5C131 /* OpenKODE_Keys.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7FC8A8A81296C768003D3931 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_UNIX,
+					BUILDING_APRIL,
+					_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../png",
+					"${SRCROOT}/../jpg",
+					"${SRCROOT}/../hltypes/include",
+					"${SRCROOT}/../gtypes/include",
+					"${SRCROOT}/include/april",
+				);
+				PRODUCT_NAME = april;
+			};
+			name = "App Store";
+		};
+		7FC8A8A91296C768003D3931 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_SDL_WINDOW,
+					_SDL,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../include/X11",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = "App Store";
+		};
+		C981CCB7132AEAE20072B5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_UNIX,
+					BUILDING_APRIL,
+					_DEBUG,
+					"DEBUG=1",
+					_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../png",
+					"${SRCROOT}/../jpg",
+					"${SRCROOT}/../hltypes/include",
+					"${SRCROOT}/../gtypes/include",
+					"${SRCROOT}/include/april",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = april;
+			};
+			name = Debug;
+		};
+		C981CCB8132AEAE20072B5A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_SDL_WINDOW,
+					_SDL,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../include/X11",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		C981CCB9132AEAEA0072B5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_UNIX,
+					BUILDING_APRIL,
+					_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../png",
+					"${SRCROOT}/../jpg",
+					"${SRCROOT}/../hltypes/include",
+					"${SRCROOT}/../gtypes/include",
+					"${SRCROOT}/include/april",
+				);
+				PRODUCT_NAME = april;
+			};
+			name = Release;
+		};
+		C981CCBA132AEAEA0072B5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_SDL_WINDOW,
+					_SDL,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../include/X11",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		D1134F13175CDA3300BFF3A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA618D768400088FC68 /* iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGLES,
+					_OPENGLES1,
+					_EGL,
+					_OPENKODE,
+					_OPENKODE_WINDOW,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "april-kd";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D1134F15175CDA3300BFF3A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA618D768400088FC68 /* iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGLES,
+					_OPENGLES1,
+					_EGL,
+					_OPENKODE,
+					_OPENKODE_WINDOW,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "april-kd";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D1134F16175CDA3300BFF3A2 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA618D768400088FC68 /* iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGLES,
+					_OPENGLES1,
+					_EGL,
+					_OPENKODE,
+					_OPENKODE_WINDOW,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "april-kd";
+				SKIP_INSTALL = YES;
+			};
+			name = "App Store";
+		};
+		D1534772178AD62A00151D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_COCOA_WINDOW,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D1534774178AD62A00151D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_COCOA_WINDOW,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D1534775178AD62A00151D1A /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_COCOA_WINDOW,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+			};
+			name = "App Store";
+		};
+		D1981C3B140F824B0057C3AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA618D768400088FC68 /* iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGLES,
+					_OPENGLES1,
+					_IOS,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D1981C3D140F824B0057C3AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA618D768400088FC68 /* iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGLES,
+					_OPENGLES1,
+					_IOS,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D1981C3E140F824B0057C3AF /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA618D768400088FC68 /* iOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGLES,
+					_OPENGLES1,
+					_IOS,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+			};
+			name = "App Store";
+		};
+		D1AF66EF170B1E5900A43743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_COCOA_WINDOW,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../include/X11",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D1AF66F1170B1E5900A43743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_COCOA_WINDOW,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../include/X11",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		D1AF66F2170B1E5900A43743 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_MAC,
+					_COCOA_WINDOW,
+					_OPENGL1,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../include/X11",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/$(EXECUTABLE_PATH)";
+				PRODUCT_NAME = april;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = "App Store";
+		};
+		D1F27AEB177A2DF700E5C131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGL1,
+					_EGL,
+					_OPENKODE,
+					_OPENKODE_WINDOW,
+					_PC_INPUT,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "april-kd";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D1F27AED177A2DF700E5C131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGL1,
+					_EGL,
+					_OPENKODE,
+					_OPENKODE_WINDOW,
+					_PC_INPUT,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "april-kd";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D1F27AEE177A2DF700E5C131 /* App Store */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1681BA718D768400088FC68 /* Mac.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/libapril_ios.dst;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_OPENGL1,
+					_EGL,
+					_OPENKODE,
+					_OPENKODE_WINDOW,
+					_PC_INPUT,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../khronos",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "april-kd";
+				SKIP_INSTALL = YES;
+			};
+			name = "App Store";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "april (SDL OpenGL)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C981CCB8132AEAE20072B5A9 /* Debug */,
+				C981CCBA132AEAEA0072B5A9 /* Release */,
+				7FC8A8A91296C768003D3931 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "april" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C981CCB7132AEAE20072B5A9 /* Debug */,
+				C981CCB9132AEAEA0072B5A9 /* Release */,
+				7FC8A8A81296C768003D3931 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1134F11175CDA3300BFF3A2 /* Build configuration list for PBXNativeTarget "april (iOS OpenKODE)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1134F13175CDA3300BFF3A2 /* Debug */,
+				D1134F15175CDA3300BFF3A2 /* Release */,
+				D1134F16175CDA3300BFF3A2 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1534770178AD62A00151D1A /* Build configuration list for PBXNativeTarget "april (Mac Cocoa OpenGL)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1534772178AD62A00151D1A /* Debug */,
+				D1534774178AD62A00151D1A /* Release */,
+				D1534775178AD62A00151D1A /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1981C3F140F824B0057C3AF /* Build configuration list for PBXNativeTarget "april (iOS OpenGLES1)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1981C3B140F824B0057C3AF /* Debug */,
+				D1981C3D140F824B0057C3AF /* Release */,
+				D1981C3E140F824B0057C3AF /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1AF66ED170B1E5900A43743 /* Build configuration list for PBXNativeTarget "april (Cocoa OpenGL)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AF66EF170B1E5900A43743 /* Debug */,
+				D1AF66F1170B1E5900A43743 /* Release */,
+				D1AF66F2170B1E5900A43743 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1F27AE9177A2DF700E5C131 /* Build configuration list for PBXNativeTarget "april (Mac OpenKODE)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F27AEB177A2DF700E5C131 /* Debug */,
+				D1F27AED177A2DF700E5C131 /* Release */,
+				D1F27AEE177A2DF700E5C131 /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

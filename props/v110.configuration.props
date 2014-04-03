@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemDefinitionGroup Condition="'$(Platform)'=='Win32'">
+    <Link>
+      <AdditionalDependencies>libhltypes.lib;libgtypes.lib;libpng.lib;libjpeg.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Platform)'=='Android' or '$(Platform)'=='Android-x86'">
+    <Link>
+      <AdditionalDependencies>-lhltypes;-lgtypes;-lpng;-ljpeg;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DirectX9|Win32' or
+                                  '$(Configuration)|$(Platform)'=='DebugS_DirectX9|Win32' or
+                                  '$(Configuration)|$(Platform)'=='Release_DirectX9|Win32' or
+                                  '$(Configuration)|$(Platform)'=='ReleaseS_DirectX9|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DIRECTX;_DIRECTX9;_WIN32_WINDOW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL1|Win32' or
+                                  '$(Configuration)|$(Platform)'=='DebugS_OpenGL1|Win32' or
+                                  '$(Configuration)|$(Platform)'=='Release_OpenGL1|Win32' or
+                                  '$(Configuration)|$(Platform)'=='ReleaseS_OpenGL1|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_OPENGL;_OPENGL1;_WIN32_WINDOW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGLES1|Win32' or
+                                  '$(Configuration)|$(Platform)'=='DebugS_OpenGLES1|Win32' or
+                                  '$(Configuration)|$(Platform)'=='Release_OpenGLES1|Win32' or
+                                  '$(Configuration)|$(Platform)'=='ReleaseS_OpenGLES1|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_OPENGL;_OPENGLES;_OPENGLES1;_EGL;_WIN32_WINDOW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libGLES_CM.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGLES1|Android' or
+                                  '$(Configuration)|$(Platform)'=='DebugS_OpenGLES1|Android' or
+                                  '$(Configuration)|$(Platform)'=='Release_OpenGLES1|Android' or
+                                  '$(Configuration)|$(Platform)'=='ReleaseS_OpenGLES1|Android' or
+                                  '$(Configuration)|$(Platform)'=='Debug_OpenGLES1|Android-x86' or
+                                  '$(Configuration)|$(Platform)'=='DebugS_OpenGLES1|Android-x86' or
+                                  '$(Configuration)|$(Platform)'=='Release_OpenGLES1|Android-x86' or
+                                  '$(Configuration)|$(Platform)'=='ReleaseS_OpenGLES1|Android-x86'">
+    <ClCompile>
+      <PreprocessorDefinitions>_OPENGL;_OPENGLES;_OPENGLES1;_ANDROIDJNI_WINDOW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenKODE|Win32' or
+                                  '$(Configuration)|$(Platform)'=='DebugS_OpenKODE|Win32' or
+                                  '$(Configuration)|$(Platform)'=='Release_OpenKODE|Win32' or
+                                  '$(Configuration)|$(Platform)'=='ReleaseS_OpenKODE|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_OPENGL;_OPENGLES;_OPENGLES1;_EGL;_OPENKODE;_OPENKODE_WINDOW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libGLES_CM.lib;libKD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenKODE|Android' or
+                                  '$(Configuration)|$(Platform)'=='DebugS_OpenKODE|Android' or
+                                  '$(Configuration)|$(Platform)'=='Release_OpenKODE|Android' or
+                                  '$(Configuration)|$(Platform)'=='ReleaseS_OpenKODE|Android' or
+                                  '$(Configuration)|$(Platform)'=='Debug_OpenKODE|Android-x86' or
+                                  '$(Configuration)|$(Platform)'=='DebugS_OpenKODE|Android-x86' or
+                                  '$(Configuration)|$(Platform)'=='Release_OpenKODE|Android-x86' or
+                                  '$(Configuration)|$(Platform)'=='ReleaseS_OpenKODE|Android-x86'">
+    <ClCompile>
+      <PreprocessorDefinitions>_OPENGL;_OPENGLES;_OPENGLES1;_EGL;_OPENKODE;_OPENKODE_WINDOW;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lKD;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

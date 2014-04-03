@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="april" default="help">
+
+	<property file="local.properties" />
+	<property file="ant.properties" />
+	<loadproperties srcFile="project.properties" />
+	<fail
+			message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through an env var"
+			unless="sdk.dir"
+	/>
+
+	<target name="-check-env">
+		<copy todir="${jar.libs.dir}" overwrite="true" file="../../../lib/android/ouya-sdk.jar"/>
+		<copy todir="${jar.libs.dir}" overwrite="true" file="../../../lib/android/commons-lang-2.6.jar"/>
+		<copy todir="${jar.libs.dir}" overwrite="true" file="../../../lib/android/guava-r09.jar"/>
+	</target>
+	
+	<!-- version-tag: 1 -->
+	<import file="${sdk.dir}/tools/ant/build.xml"/>
+
+</project>

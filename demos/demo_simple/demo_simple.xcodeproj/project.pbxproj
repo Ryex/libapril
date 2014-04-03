@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F0E1790124BA68D00B803EF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0E178F124BA68D00B803EF /* QuartzCore.framework */; };
+		7F42FB5511EB355D00B1C1DF /* demo_simple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F42FB5411EB355D00B1C1DF /* demo_simple.cpp */; };
+		7F42FB6111EB358900B1C1DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42FB6011EB358900B1C1DF /* Cocoa.framework */; };
+		7F42FB6611EB35CE00B1C1DF /* april.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42FB4411EB352000B1C1DF /* april.framework */; };
+		7F42FB6F11EB35D700B1C1DF /* gtypes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42FB6E11EB35D700B1C1DF /* gtypes.framework */; };
+		7F42FB7111EB35DC00B1C1DF /* hltypes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F42FB7011EB35DC00B1C1DF /* hltypes.framework */; };
+		7FB42849124A13D500AA8B30 /* demo_simple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F42FB5411EB355D00B1C1DF /* demo_simple.cpp */; };
+		7FB428D3124A16CA00AA8B30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB428D2124A16CA00AA8B30 /* CoreGraphics.framework */; };
+		7FB428D6124A16D500AA8B30 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB428D5124A16D500AA8B30 /* OpenGLES.framework */; };
+		7FB4293D124A369E00AA8B30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB4293C124A369D00AA8B30 /* UIKit.framework */; };
+		7FB42941124A36C900AA8B30 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB42940124A36C900AA8B30 /* CoreFoundation.framework */; };
+		7FB42943124A36C900AA8B30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB42942124A36C900AA8B30 /* Foundation.framework */; };
+		7FCA63DB124CA690004E9E93 /* media in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA63D0124CA690004E9E93 /* media */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F0E178F124BA68D00B803EF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7F42FB4411EB352000B1C1DF /* april.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = april.framework; path = /Library/Frameworks/april.framework; sourceTree = "<absolute>"; };
+		7F42FB4B11EB352D00B1C1DF /* April Simple Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "April Simple Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F42FB4E11EB352D00B1C1DF /* demo_simple-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "demo_simple-Info.plist"; sourceTree = "<group>"; };
+		7F42FB5411EB355D00B1C1DF /* demo_simple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = demo_simple.cpp; sourceTree = "<group>"; };
+		7F42FB6011EB358900B1C1DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		7F42FB6E11EB35D700B1C1DF /* gtypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtypes.framework; path = /Library/Frameworks/gtypes.framework; sourceTree = "<absolute>"; };
+		7F42FB7011EB35DC00B1C1DF /* hltypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hltypes.framework; path = /Library/Frameworks/hltypes.framework; sourceTree = "<absolute>"; };
+		7FB428D2124A16CA00AA8B30 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FB428D5124A16D500AA8B30 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7FB4293C124A369D00AA8B30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FB42940124A36C900AA8B30 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		7FB42942124A36C900AA8B30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FCA63D0124CA690004E9E93 /* media */ = {isa = PBXFileReference; lastKnownFileType = folder; name = media; path = ../media; sourceTree = SOURCE_ROOT; };
+		7FF495F712476AC800A22D50 /* demosimpleios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demosimpleios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF495F912476AC800A22D50 /* demo_simple-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "demo_simple-ios-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F42FB4911EB352D00B1C1DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42FB6611EB35CE00B1C1DF /* april.framework in Frameworks */,
+				7F42FB6111EB358900B1C1DF /* Cocoa.framework in Frameworks */,
+				7F42FB6F11EB35D700B1C1DF /* gtypes.framework in Frameworks */,
+				7F42FB7111EB35DC00B1C1DF /* hltypes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF495F512476AC800A22D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB428D3124A16CA00AA8B30 /* CoreGraphics.framework in Frameworks */,
+				7FB428D6124A16D500AA8B30 /* OpenGLES.framework in Frameworks */,
+				7FB4293D124A369E00AA8B30 /* UIKit.framework in Frameworks */,
+				7FB42941124A36C900AA8B30 /* CoreFoundation.framework in Frameworks */,
+				7FB42943124A36C900AA8B30 /* Foundation.framework in Frameworks */,
+				7F0E1790124BA68D00B803EF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F42FB3111EB34D600B1C1DF = {
+			isa = PBXGroup;
+			children = (
+				7FCA63D0124CA690004E9E93 /* media */,
+				7FB428AF124A16BB00AA8B30 /* iOS Frameworks */,
+				7F42FB5311EB354C00B1C1DF /* Includes */,
+				7F42FB5211EB354900B1C1DF /* Sources */,
+				7F42FB4411EB352000B1C1DF /* april.framework */,
+				7F42FB4C11EB352D00B1C1DF /* Products */,
+				7F42FB4E11EB352D00B1C1DF /* demo_simple-Info.plist */,
+				7F42FB6011EB358900B1C1DF /* Cocoa.framework */,
+				7F42FB6E11EB35D700B1C1DF /* gtypes.framework */,
+				7F42FB7011EB35DC00B1C1DF /* hltypes.framework */,
+				7FF495F912476AC800A22D50 /* demo_simple-ios-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		7F42FB4C11EB352D00B1C1DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F42FB4B11EB352D00B1C1DF /* April Simple Demo.app */,
+				7FF495F712476AC800A22D50 /* demosimpleios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F42FB5211EB354900B1C1DF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7F42FB5411EB355D00B1C1DF /* demo_simple.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		7F42FB5311EB354C00B1C1DF /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Includes;
+			sourceTree = "<group>";
+		};
+		7FB428AF124A16BB00AA8B30 /* iOS Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FB428D2124A16CA00AA8B30 /* CoreGraphics.framework */,
+				7FB428D5124A16D500AA8B30 /* OpenGLES.framework */,
+				7FB4293C124A369D00AA8B30 /* UIKit.framework */,
+				7FB42940124A36C900AA8B30 /* CoreFoundation.framework */,
+				7FB42942124A36C900AA8B30 /* Foundation.framework */,
+				7F0E178F124BA68D00B803EF /* QuartzCore.framework */,
+			);
+			name = "iOS Frameworks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F42FB4A11EB352D00B1C1DF /* demo_simple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F42FB5111EB352E00B1C1DF /* Build configuration list for PBXNativeTarget "demo_simple" */;
+			buildPhases = (
+				7F42FB4711EB352D00B1C1DF /* Resources */,
+				7F42FB4811EB352D00B1C1DF /* Sources */,
+				7F42FB4911EB352D00B1C1DF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demo_simple;
+			productName = demo_simple;
+			productReference = 7F42FB4B11EB352D00B1C1DF /* April Simple Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FF495F612476AC800A22D50 /* demo_simple-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF495FC12476AC900A22D50 /* Build configuration list for PBXNativeTarget "demo_simple-ios" */;
+			buildPhases = (
+				7FF495F312476AC800A22D50 /* Resources */,
+				7FF495F412476AC800A22D50 /* Sources */,
+				7FF495F512476AC800A22D50 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "demo_simple-ios";
+			productName = "demo_simple-ios";
+			productReference = 7FF495F712476AC800A22D50 /* demosimpleios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F42FB3311EB34D600B1C1DF /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7F42FB3611EB34D600B1C1DF /* Build configuration list for PBXProject "demo_simple" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 7F42FB3111EB34D600B1C1DF;
+			productRefGroup = 7F42FB4C11EB352D00B1C1DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F42FB4A11EB352D00B1C1DF /* demo_simple */,
+				7FF495F612476AC800A22D50 /* demo_simple-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F42FB4711EB352D00B1C1DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF495F312476AC800A22D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCA63DB124CA690004E9E93 /* media in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F42FB4811EB352D00B1C1DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F42FB5511EB355D00B1C1DF /* demo_simple.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF495F412476AC800A22D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FB42849124A13D500AA8B30 /* demo_simple.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7F42FB3411EB34D600B1C1DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "April Simple Demo";
+			};
+			name = Debug;
+		};
+		7F42FB3511EB34D600B1C1DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				PRODUCT_NAME = "April Simple Demo";
+			};
+			name = Release;
+		};
+		7F42FB4F11EB352E00B1C1DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = .;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "demo_simple-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+			};
+			name = Debug;
+		};
+		7F42FB5011EB352E00B1C1DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = "demo_simple-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		7FF495FA12476AC900A22D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(USER_LIBRARY_DIR)/SDKs/hltypesSDK/$(PLATFORM_NAME).sdk/usr/local/include",
+					"$(USER_LIBRARY_DIR)/SDKs/gtypesSDK/$(PLATFORM_NAME).sdk/usr/local/include",
+					"$(USER_LIBRARY_DIR)/SDKs/aprilSDK/$(PLATFORM_NAME).sdk/usr/local/include",
+				);
+				INFOPLIST_FILE = "demo_simple-ios-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(USER_LIBRARY_DIR)/SDKs/hltypesSDK/$(PLATFORM_NAME).sdk/usr/local/lib",
+					"$(USER_LIBRARY_DIR)/SDKs/gtypesSDK/$(PLATFORM_NAME).sdk/usr/local/lib",
+					"$(USER_LIBRARY_DIR)/SDKs/aprilSDK/$(PLATFORM_NAME).sdk/usr/local/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lapril",
+					"-lgtypes",
+					"-lhltypes",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = demosimpleios;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		7FF495FB12476AC900A22D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "$(USER_LIBRARY_DIR)/SDKs/aprilSDK/$(PLATFORM_NAME).sdk $(USER_LIBRARY_DIR)/SDKs/gtypesSDK/$(PLATFORM_NAME).sdk $(USER_LIBRARY_DIR)/SDKs/hltypesSDK/$(PLATFORM_NAME).sdk";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(USER_LIBRARY_DIR)/SDKs/hltypesSDK/$(PLATFORM_NAME).sdk/usr/local/include",
+					"$(USER_LIBRARY_DIR)/SDKs/gtypesSDK/$(PLATFORM_NAME).sdk/usr/local/include",
+					"$(USER_LIBRARY_DIR)/SDKs/aprilSDK/$(PLATFORM_NAME).sdk/usr/local/include",
+				);
+				INFOPLIST_FILE = "demo_simple-ios-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(USER_LIBRARY_DIR)/SDKs/hltypesSDK/$(PLATFORM_NAME).sdk/usr/local/lib",
+					"$(USER_LIBRARY_DIR)/SDKs/gtypesSDK/$(PLATFORM_NAME).sdk/usr/local/lib",
+					"$(USER_LIBRARY_DIR)/SDKs/aprilSDK/$(PLATFORM_NAME).sdk/usr/local/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lapril",
+					"-lgtypes",
+					"-lhltypes",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = demosimpleios;
+				SDKROOT = iphoneos4.1;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F42FB3611EB34D600B1C1DF /* Build configuration list for PBXProject "demo_simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F42FB3411EB34D600B1C1DF /* Debug */,
+				7F42FB3511EB34D600B1C1DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F42FB5111EB352E00B1C1DF /* Build configuration list for PBXNativeTarget "demo_simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F42FB4F11EB352E00B1C1DF /* Debug */,
+				7F42FB5011EB352E00B1C1DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF495FC12476AC900A22D50 /* Build configuration list for PBXNativeTarget "demo_simple-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF495FA12476AC900A22D50 /* Debug */,
+				7FF495FB12476AC900A22D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F42FB3311EB34D600B1C1DF /* Project object */;
+}

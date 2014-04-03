@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="winrt">
+      <UniqueIdentifier>{f0ae1058-a500-44e2-8f2a-326b57b71662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="winrt\media">
+      <UniqueIdentifier>{df25b4c6-d8ac-462d-b490-c614f00bcfbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="winrt\media\assets">
+      <UniqueIdentifier>{88ab3f03-5374-4194-8762-3355cfa6d25a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="demo_3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <Filter>winrt</Filter>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="media\jpt_raw.jpg">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\jpt_raw.png">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\line_horz.png">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\line_vert.png">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\line45.png">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\line315.png">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\o.png">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\texture.jpg">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\x.png">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\assets\logo_icon.png">
+      <Filter>winrt\media\assets</Filter>
+    </Image>
+    <Image Include="media\assets\small_icon.png">
+      <Filter>winrt\media\assets</Filter>
+    </Image>
+    <Image Include="media\assets\splash.png">
+      <Filter>winrt\media\assets</Filter>
+    </Image>
+    <Image Include="media\assets\store_icon.png">
+      <Filter>winrt\media\assets</Filter>
+    </Image>
+    <Image Include="media\jpt_final.jpt">
+      <Filter>winrt\media</Filter>
+    </Image>
+    <Image Include="media\assets\tile-medium.png">
+      <Filter>winrt\media\assets</Filter>
+    </Image>
+    <Image Include="media\assets\tile-small.png">
+      <Filter>winrt\media\assets</Filter>
+    </Image>
+    <Image Include="media\assets\icon.png">
+      <Filter>winrt\media\assets</Filter>
+    </Image>
+    <Image Include="media\icon.png">
+      <Filter>winrt\media</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="WMAppManifest.xml">
+      <Filter>winrt</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TemporaryKey.pfx">
+      <Filter>winrt</Filter>
+    </None>
+    <None Include="media\cursor.ani">
+      <Filter>winrt\media</Filter>
+    </None>
+    <None Include="media\simple.cur">
+      <Filter>winrt\media</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="winrt-cursors.rc">
+      <Filter>winrt</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
